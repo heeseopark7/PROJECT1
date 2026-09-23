@@ -29,8 +29,8 @@ initial begin
 end
 
 initial begin
-$dumpfile("./baud_gen.vcd");
-$dumpvars(0, dut);
+$dumpfile("./DUMP/baud_gen.vcd");
+$dumpvars(0, tb_baud_gen);
 end
 
 endmodule
