@@ -18,19 +18,19 @@ output                  o_led_ctrl  ;
 output                  o_tx_start  ;
 output      [7:0]       o_tx_data   ;
 
-//  led control
 reg                     o_led_ctrl  ;
 
+//  led control
 always @(posedge i_clk or negedge i_nRst)begin
     if (!i_nRst)
         o_led_ctrl <= 1'b0          ;
-    else if ((i_rx_data == 8'h72) && i_rx_done) // run
+    else if ((i_rx_data == 8'h72) && i_rx_done) // r을 눌렀을때 led on
         o_led_ctrl <= 1'b1          ;
-    else if ((i_rx_data == 8'h6F) && i_rx_done) // off
+    else if ((i_rx_data == 8'h6F) && i_rx_done) // o를 눌렀을때 led off
         o_led_ctrl <= 1'b0          ;
 end
 
-assign o_tx_start = i_rx_done && (i_rx_data != 8'h72) && (i_rx_data != 8'h6F);
-assign o_tx_data  = i_rx_data                                                ; 
+assign o_tx_start = i_rx_done       ; //  모든 수신 문자 echo
+assign o_tx_data  = i_rx_data       ; 
     
-endmodule
+endmodule   

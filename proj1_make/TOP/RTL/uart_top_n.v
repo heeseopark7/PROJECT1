@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module uart_top (
+module uart_top_n (
     i_clk       ,
     i_nRst      ,
     i_rx        ,
