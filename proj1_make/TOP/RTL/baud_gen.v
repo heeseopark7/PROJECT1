@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps 
 
 module baud_gen #(
-    parameter   DIV = 8'd216
+    parameter   DIV = 8'd216 //  0~216 카운트 = 217분주 (33.333MHz / (9600 x 16))
 )(
         i_clk       ,
         i_nRst      ,
