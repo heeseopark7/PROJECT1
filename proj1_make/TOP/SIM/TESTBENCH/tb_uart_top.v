@@ -30,6 +30,24 @@ uart_top    u_uart_top (
     .o_led_ctrl     (o_led_ctrl)
 );
 
+task send_byte  ;
+    input   [7:0]   i_data      ;
+    integer         i           ;
+    begin
+        // start bit
+        i_rx = 1'b0             ;
+        #(BIT_PERIOD)           ;
 
+        // data 8bit (LSB first)
+        for (i=0; i<8; i = i +1)begin
+            i_rx = i_data[i]    ;
+            #(BIT_PERIOD)       ;
+        end
+
+        // stop bit
+        i_rx = 1'b1             ;
+        #(BIT_PERIOD)           ;
+    end
+endtask
 
 endmodule
