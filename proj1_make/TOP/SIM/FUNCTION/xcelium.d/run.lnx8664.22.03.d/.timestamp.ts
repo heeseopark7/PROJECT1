@@ -1,8 +1,0 @@
-1790086032 /GPDK045/digital/giolib045_v3.5/vlog/pads_FF_s1vg.v
-1790320159 /home/hah013/PROJ1/proj1_make/TOP/RTL/cmd_decoder.v
-1790087440 /home/hah013/PROJ1/proj1_make/TOP/RTL/baud_gen.v
-1790320159 /home/hah013/PROJ1/proj1_make/TOP/RTL/uart_top_n.v
-1790179665 /home/hah013/PROJ1/proj1_make/TOP/RTL/uart_rx.v
-1790321058 /home/hah013/PROJ1/proj1_make/TOP/SIM/TESTBENCH/tb_uart_top_n.v
-1790320727 /home/hah013/PROJ1/proj1_make/TOP/RTL/uart_tx.v
-1790086031 /GPDK045/digital/gsclib045_all_v4.4/gsclib045_svt_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v
