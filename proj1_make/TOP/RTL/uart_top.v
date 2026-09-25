@@ -23,14 +23,14 @@ wire            w_rx_done   ;
 
 
 //  baud_generator
-baud_gen uut1   (
+baud_gen dut1   (
     .i_clk      (i_clk      ),
     .i_nRst     (i_nRst     ),
     .o_tick_16x (w_tick_16x )
 );
 
 //  tx
-uart_tx uut2    (
+uart_tx dut2    (
     .i_clk      (i_clk      ),
     .i_nRst     (i_nRst     ),
     .i_tick_16x (w_tick_16x ),
@@ -41,7 +41,7 @@ uart_tx uut2    (
 );
 
 //  rx
-uart_rx uut3    (
+uart_rx dut3    (
     .i_clk      (i_clk      ),
     .i_nRst     (i_nRst     ),
     .i_tick_16x (w_tick_16x ),
@@ -52,7 +52,7 @@ uart_rx uut3    (
 );
 
 //  command decoder
-cmd_decoder uut4(
+cmd_decoder dut4(
     .i_clk      (i_clk      ),
     .i_nRst     (i_nRst     ),
     .i_rx_done  (w_rx_done  ),
