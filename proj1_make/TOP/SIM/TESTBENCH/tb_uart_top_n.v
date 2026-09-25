@@ -19,7 +19,7 @@ wire        o_led_ctrl;
 // -------------------------------------------------------------
 // DUT (Design Under Test) - IOPAD 포함된 uart_top
 // -------------------------------------------------------------
-uart_top dut (
+uart_top_n dut (
     .i_clk      (i_clk      ),
     .i_nRst     (i_nRst     ),
     .i_rx       (i_rx       ),
