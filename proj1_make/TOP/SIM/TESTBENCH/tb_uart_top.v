@@ -20,6 +20,13 @@ initial begin
     i_rx    = 1'b1              ;
     repeat(4) @(posedge i_clk)  ;
     i_nRst  = 1'b1              ;
+    send_byte(8'h72)            ; //  r
+    #(BIT_PERIOD * 13)          ;
+    send_byte(8'h6F)            ; //  o
+    #(BIT_PERIOD * 13)          ;
+    send_byte(8'h61)            ; //  a
+    #(BIT_PERIOD * 13)          ;
+    $finish                     ;
 end
 
 uart_top    u_uart_top (
