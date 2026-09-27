@@ -50,4 +50,11 @@ task send_byte  ;
     end
 endtask
 
+`ifdef function_sim
+initial begin
+    $dumpfile("./DUMP/uart_top.vcd");
+    $dumpvars(0, tb_uart_top);
+end
+`endif
+
 endmodule

@@ -6,8 +6,8 @@ xrun -64bit \
      -profthread \
      -gui \
      +libext+.v \
-     ../TESTBENCH/tb_uart_top_n.v \
-     ../../RTL/uart_top_n.v \
+     ../TESTBENCH/tb_uart_top.v \
+     ../../RTL/uart_top.v \
      ../../RTL/baud_gen.v \
      ../../RTL/uart_tx.v \
      ../../RTL/uart_rx.v \
