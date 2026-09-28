@@ -20,11 +20,11 @@ initial begin
     i_rx    = 1'b1              ;
     repeat(4) @(posedge i_clk)  ;
     i_nRst  = 1'b1              ;
-    send_byte(8'h72)            ; //  r
+    send_byte(8'h72)            ; //  r=8'b0111_0010
     #(BIT_PERIOD * 13)          ;
-    send_byte(8'h6F)            ; //  o
+    send_byte(8'h6F)            ; //  o=8'b0110_1111
     #(BIT_PERIOD * 13)          ;
-    send_byte(8'h61)            ; //  a
+    send_byte(8'h61)            ; //  a=8'b0110_0001
     #(BIT_PERIOD * 13)          ;
     $finish                     ;
 end
