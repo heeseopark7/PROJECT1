@@ -11,7 +11,7 @@ puts "Hostname : [info hostname]"
 # Preset global variables and attributes
 ######################################################################
 
-set TOP_DESIGN  uart_top
+set TOP_DESIGN  cmsdk_mcu
 
 set LOG_DIR     "./log"
 set RPT_DIR     "./report"
@@ -30,11 +30,10 @@ set LIB_LIST {fast_vdd1v0_basicCells.lib slow_vdd1v0_basicCells.lib pads_SS_s1vg
 set LEF_LIST {gsclib045_tech.lef gsclib045_macro.lef giolib045.lef}
 set QRC_LIST {gpdk045.tch}
 
-set RTL_SOURCES "../RTL/uart_top.v \
-		../RTL/baud_gen.v \
-		../RTL/cmd_decoder.v \
-    ../RTL/uart_rx.v \
-    ../RTL/uart_tx.v \
+set RTL_SOURCES "../RTL/cmsdk_mcu.v \
+		../RTL/verilog_smkcow/cmsdk_mcu_clkctrl.v \
+		../RTL/verilog_smkcow/cmsdk_mcu_pin_mux.v \
+		../../../cortexm0_designstart/implementation/cortex_m0_mcu_system_cadence_7ns/mapped/cmsdk_mcu_system_syn_final.v \
 "
 set_db auto_ungroup none
 set_db max_cpus_per_server 2
@@ -72,6 +71,7 @@ time_info Elaboration
 
 init_design
 
+set_db hinst:u_cmsdk_mcu_system .preserve true
 set_db optimize_merge_flops false
 set_db optimize_merge_latches false
 
@@ -85,7 +85,7 @@ check_design > ${RPT_DIR}/00_check_design.rpt
 ####################################################################
 
 #read_sdc  ./cons/cmsdk_mcu.sdc
-source -verbose  ./cons/uart_top.sdc     ; #This command can't write report by using the mark '>'
+#source -verbose  ./cons/cmsdk_mcu.sdc     ; #This command can't write report by using the mark '>'
 source -verbose  ./cons/dont_use_45nm.tcl ; #This command can't write report by using the mark '>'
 puts "The number of exceptions is [llength [vfind "design:$TOP_DESIGN" -exception *]]"
 #set_db "design:$DESIGN" .force_wireload <wireload name> 
