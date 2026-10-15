@@ -18,11 +18,11 @@ set UNMAPPED_DIR   "./unmapped"
 set MAPPED_DIR     "./mapped"
 
 #GPDK 045 SVT
-set STD_LIB_PATH "../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing"
-set IO_LIB_PATH "../../../GPDK045/digital/giolib045_v3.5/timing"
-set LEF_LIB_PATH "../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef ../../../GPDK045/digital/giolib045_v3.5/lef"
+set STD_LIB_PATH "../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing"
+set IO_LIB_PATH "../../../../SoC/GPDK045/digital/giolib045_v3.5/timing"
+set LEF_LIB_PATH "../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef ../../../GPDK045/digital/giolib045_v3.5/lef"
 set RTL_PATH     "../RTL"
-set QRC_FILE_PATH "../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx"
+set QRC_FILE_PATH "../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx"
 
 #GPDK 045 SVT
 set LIB_LIST {fast_vdd1v0_basicCells.lib slow_vdd1v0_basicCells.lib pads_SS_s1vg.lib}
