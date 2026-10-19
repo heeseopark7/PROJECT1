@@ -57,18 +57,17 @@ task send_byte  ;
     end
 endtask
 
-`ifdef function_sim
 initial begin
+`ifdef function_sim
     $dumpfile("./DUMP/uart_top.vcd");
     $dumpvars(0, tb_uart_top);
-end
 `endif
 
 `ifdef sdf_gate
-        $sdf_annotate("../mapped/uart_top_delays.sdf", tb_uart_top.u_uart_top);
+        $sdf_annotate("./uart_top_delays.sdf", tb_uart_top.u_uart_top);
         $shm_open("./dump/tb_uart_top_sdf_gate");
         $shm_probe(tb_uart_top, "AC");
 `endif
 
-
+end
 endmodule

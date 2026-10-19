@@ -20,7 +20,7 @@ xrun -64bit \
      -gui \
      +libext+.v \
      ../TESTBENCH/tb_uart_top.v \
-     ../../SYN/mapped/uart_top_syn_final.v \
+     uart_top_syn_final.v \
      ../../../../../SoC/GPDK045/digital/giolib045_v3.5/vlog/pads_FF_s1vg.v \
      ../../../../../SoC/GPDK045/digital//gsclib045_all_v4.4/gsclib045_svt_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v \
      -l pre_sim.log
