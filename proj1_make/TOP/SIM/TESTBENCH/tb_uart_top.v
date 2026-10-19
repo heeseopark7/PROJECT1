@@ -64,4 +64,11 @@ initial begin
 end
 `endif
 
+`ifdef sdf_gate
+        $sdf_annotate("../mapped/uart_top_delays.sdf", tb_uart_top.u_uart_top);
+        $shm_open("./dump/tb_uart_top_sdf_gate");
+        $shm_probe(tb_uart_top, "AC");
+`endif
+
+
 endmodule
