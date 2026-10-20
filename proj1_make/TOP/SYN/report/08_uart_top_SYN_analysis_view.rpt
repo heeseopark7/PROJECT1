@@ -31,6 +31,8 @@ _______________________________
      |   |    |
      |   |    + qx_tech_file: /home/hah013/PROJ1/proj1_make/TOP/SYN/../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx/gpdk045.tch
      |   |    |
-     |   |    + temperature: 0.0
+     |   |    + temperature: 125.0
      |
      + Constraint Mode: default_emulate_constraint_mode
+     |   |
+     |   + SDC Constraint Files: ./cons/uart_top.sdc

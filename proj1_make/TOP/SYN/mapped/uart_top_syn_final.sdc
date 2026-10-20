@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 22.17-s071_1 on Tue Oct 20 01:37:38 KST 2026
+#  Created by Genus(TM) Synthesis Solution 22.17-s071_1 on Wed Oct 21 01:36:13 KST 2026
 
 # ####################################################################
 
@@ -12,7 +12,7 @@ set_units -time 1000ps
 # Set the current design
 current_design uart_top
 
-create_clock -name "MAIN_CLOCK" -period 0.8 -waveform {0.0 0.4} [get_ports i_clk]
+create_clock -name "MAIN_CLOCK" -period 8.0 -waveform {0.0 4.0} [get_ports i_clk]
 set_clock_transition 0.1 [get_clocks MAIN_CLOCK]
 set_load -pin_load 0.003 [get_ports o_tx]
 set_load -pin_load 0.003 [get_ports o_led_ctrl]

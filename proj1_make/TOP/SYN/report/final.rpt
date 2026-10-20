@@ -5,23 +5,23 @@ QoS Summary for uart_top
 ================================================================================
 Metric                          syn_generic     syn_map         syn_opt        
 ================================================================================
-Slack (ps):                    -1,768          -1,779          -1,779
-  R2R (ps):                       265              15              15
-  I2R (ps):                    -1,768          -1,779          -1,779
-  R2O (ps):                      -485            -497            -463
+Slack (ps):                     5,432           5,420           5,420
+  R2R (ps):                     7,272           7,002           7,002
+  I2R (ps):                     5,432           5,420           5,420
+  R2O (ps):                     6,720           6,648           6,654
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
-TNS (ps):                      -2,665          -2,694          -2,658
+TNS (ps):                           0               0               0
   R2R (ps):                         0               0               0
-  I2R (ps):                    -1,768          -1,779          -1,779
-  R2O (ps):                      -896            -915            -878
+  I2R (ps):                         0               0               0
+  R2O (ps):                         0               0               0
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
-Failing Paths:                      3               3               3
-Cell Area:                     72,000          72,521          72,527
-Total Cell Area:               72,000          72,521          72,527
-Leaf Instances:                   245             161             160
-Total Instances:                  245             161             160
+Failing Paths:                      0               0               0
+Cell Area:                     72,000          72,502          72,502
+Total Cell Area:               72,000          72,502          72,502
+Leaf Instances:                   242             158             156
+Total Instances:                  242             158             156
 Utilization (%):                 0.00            0.00            0.00
 Tot. Net Length (um):        no_value        no_value        no_value
 Avg. Net Length (um):        no_value        no_value        no_value
@@ -32,17 +32,17 @@ Norm Cong Hotspot Area:
   Max Cong:                  no_value        no_value        no_value
   Tot Cong:                  no_value        no_value        no_value
 ================================================================================
-CPU  Runtime (h:m:s):        00:00:16        00:00:06        00:00:01
-Real Runtime (h:m:s):        00:00:17        00:00:06        00:00:03
-CPU  Elapsed (h:m:s):        00:00:27        00:00:33        00:00:34
-Real Elapsed (h:m:s):        00:00:22        00:00:28        00:00:31
-Memory (MB):                  1729.85         1736.31         1737.13
+CPU  Runtime (h:m:s):        00:01:49        00:00:17        00:00:17
+Real Runtime (h:m:s):        00:51:08        00:05:29        00:07:44
+CPU  Elapsed (h:m:s):        00:01:57        00:02:14        00:02:31
+Real Elapsed (h:m:s):        00:51:12        00:56:41        01:04:25
+Memory (MB):                  1762.13         1798.91         1785.27
 ================================================================================
 ================================================================================
 Flow Settings:
 ================================================================================
-Total Runtime (h:m:s): 00:00:26
-Total Memory (MB):     1737.13
+Total Runtime (h:m:s): 01:04:21
+Total Memory (MB):     1785.27
 Executable Version:    22.17-s071_1
 ================================================================================
 Total Cell Area =  Cell Area + Physical Cell Area

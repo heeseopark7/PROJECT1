@@ -1,6 +1,6 @@
 #################################################################################
 #
-# Created by Genus(TM) Synthesis Solution 22.17-s071_1 on Tue Oct 20 01:37:37 KST 2026
+# Created by Genus(TM) Synthesis Solution 22.17-s071_1 on Wed Oct 21 01:35:06 KST 2026
 #
 #################################################################################
 
@@ -23,7 +23,7 @@ create_timing_condition -name default_emulate_timing_cond_max \
 
 ## rc_corner
 create_rc_corner -name default_emulate_rc_corner \
-    -temperature 0.0 \
+    -temperature 125.0 \
     -qrc_tech /home/hah013/PROJ1/proj1_make/TOP/SYN/../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx/gpdk045.tch \
     -pre_route_res 1.0 \
     -pre_route_cap 1.0 \
