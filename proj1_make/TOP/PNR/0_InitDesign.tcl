@@ -9,7 +9,7 @@ set init_lef_file {../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_
 set init_verilog ../SYN/mapped/uart_top_syn_final.v
 set init_mmmc_file uart_top.mmmc.view
 set init_io_file init.io
-set init_top_cell cmsdk_mcu
+set init_top_cell uart_top
 set init_pwr_net VDD
 init_design
 
@@ -17,56 +17,27 @@ init_design
 checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -spef -floorplan -place -outdir checkDesign
 
 ##################################################
-## Floorplan :: Below is for CHIP AREA (4030,4030)
+## Floorplan :: Below is for CHIP AREA (1000,1000)
 ##################################################
-#floorPlan -site CoreSite -s 700 700 1425 1425 1425 1425; almost 70%
-floorPlan -site CoreSite -r 1 0.7 1200 1200 1200 1200
+floorPlan -site CoreSite -s 99.18 99.18 450.41 450.41 450.41 450.41
 
 ## Move IO Cells (PADVDD, PADVSS)
-selectInst pad46
-placeInstance pad46 0.0 580.0 R270
-selectInst pad47
-placeInstance pad47 0.0 510.0 R270
-selectInst pad36
-placeInstance pad36 0.0 1280.0 R270
-selectInst pad35
-placeInstance pad35 0.0 1350.0 R270
-selectInst pad23
-placeInstance pad23 0.0 2190.0 R270
-selectInst pad22
-placeInstance pad22 0.0 2260.0 R270
-selectInst pad21
-placeInstance pad21 0.0 2330.0 R270
+selectInst pad8
+placeInstance pad8 0.0 580.0 R270
+selectInst pad9
+placeInstance pad9 0.0 650.0 R270
 selectInst pad12
-placeInstance pad12 0.0 2960.0 R270
-selectInst pad11
-placeInstance pad11 0.0 3030.0 R270
-selectInst pad7
-placeInstance pad7 0.0 3310.0 R270
-selectInst pad67
-placeInstance pad67 1420.0 0.0 R0
-selectInst pad68
-placeInstance pad68 1490.0 0.0 R0
-selectInst pad88
-placeInstance pad88 2890.0 0.0 R0
-selectInst pad87
-placeInstance pad87 2820.0 0.0 R0
-selectInst pad118
-placeInstance pad118 3790.0 1490.0 R90
-selectInst pad119
-placeInstance pad119 3790.0 1560.0 R90
-selectInst pad138
-placeInstance pad138 3790.0 2890.0 R90
-selectInst pad139
-placeInstance pad139 3790.0 2960.0 R90
-selectInst pad182
-placeInstance pad182 1560.0 3790.0 R180
-selectInst pad181
-placeInstance pad181 1630.0 3790.0 R180
-selectInst pad161
-placeInstance pad161 3030.0 3790.0 R180
-selectInst pad160
-placeInstance pad160 3100.0 3790.0 R180
+placeInstance pad12 510.0 0.0 R0
+selectInst pad13
+placeInstance pad13 580.0 0.0 R0
+selectInst pad16
+placeInstance pad16 760.0 510.0 R90
+selectInst pad17
+placeInstance pad17 760.0 580.0 R90
+selectInst pad20
+placeInstance pad20 510.0 760.0 R180
+selectInst pad21
+placeInstance pad21 580.0 760.0 R180
 
 ## IO Filler Insertion
 addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side n
