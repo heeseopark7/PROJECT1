@@ -342,5 +342,21 @@ module uart_top(i_clk, i_nRst, i_rx, o_tx, o_led_ctrl);
   PADDI pad3(.PAD (i_rx), .Y (w_rx));
   PADDO pad4(.A (w_tx), .PAD (o_tx));
   PADDO pad5(.A (w_led_ctrl), .PAD (o_led_ctrl));
+  PADVSSIOR pad6();
+PADVDDIOR pad7();
+PADVSS    pad8();
+PADVDD    pad9();
+PADVSSIOR pad10();
+PADVDDIOR pad11();
+PADVSS    pad12();
+PADVDD    pad13();
+PADVSSIOR pad14();
+PADVDDIOR pad15();
+PADVSS    pad16();
+PADVDD    pad17();
+PADVSSIOR pad18();
+PADVDDIOR pad19();
+PADVSS    pad20();
+PADVDD    pad21();
 endmodule
 
