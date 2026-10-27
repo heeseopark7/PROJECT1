@@ -7,7 +7,7 @@
 set init_gnd_net VSS
 set init_lef_file {../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/lef/gsclib045_tech.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ../../../../SoC/GPDK045/digital/giolib045_v3.5/lef/giolib045_modify.lef}
 set init_verilog ../SYN/mapped/uart_top_syn_final.v
-set init_mmmc_file cmsdk_mcu.mmmc.view
+set init_mmmc_file uart_top.mmmc.view
 set init_io_file init.io
 set init_top_cell cmsdk_mcu
 set init_pwr_net VDD
