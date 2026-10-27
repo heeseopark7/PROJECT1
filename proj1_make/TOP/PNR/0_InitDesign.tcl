@@ -18,6 +18,7 @@ checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -
 
 ##################################################
 ## Floorplan :: Below is for CHIP AREA (1000,1000)
+<<<<<<< HEAD
 ## core 99.18 x 99.18, margins are measured from the DIE edge
 ##################################################
 floorPlan -site CoreSite -s 99.18 99.18 450.41 450.41 450.41 450.41 -coreMarginsBy die
@@ -28,6 +29,28 @@ loadIoFile init.io
 ## Check the floorplan, it should be about {0 0 1000 1000}
 puts [dbGet top.fPlan.box]
 puts [dbGet top.fPlan.coreBox]
+=======
+##################################################
+floorPlan -site CoreSite -s 99.18 99.18 450.41 450.41 450.41 450.41
+
+## Move IO Cells (PADVDD, PADVSS)
+selectInst pad8
+placeInstance pad8 0.0 580.0 R270
+selectInst pad9
+placeInstance pad9 0.0 650.0 R270
+selectInst pad12
+placeInstance pad12 510.0 0.0 R0
+selectInst pad13
+placeInstance pad13 580.0 0.0 R0
+selectInst pad16
+placeInstance pad16 760.0 510.0 R90
+selectInst pad17
+placeInstance pad17 760.0 580.0 R90
+selectInst pad20
+placeInstance pad20 510.0 760.0 R180
+selectInst pad21
+placeInstance pad21 580.0 760.0 R180
+>>>>>>> 82c95096a4504675051e64ff800024e8fd89f030
 
 ## IO Filler Insertion
 addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side n
