@@ -68,13 +68,13 @@ set_output_delay -min -0.01 -clock MAIN_CLOCK [all_outputs]
 #############################
 ##### Select this point! ####
 #############################
-#set_driving_cell -lib_cell DFFHQX1 -pin Q [remove_from_collection [all_inputs] [get_ports clk]]
+set_driving_cell -lib_cell DFFHQX1 -pin Q [remove_from_collection [all_inputs] [get_ports i_clk]]
 
 #set_driving_cell -lib_cell PADDI -pin Y -library [get_libs $STD_LIB_slow] [remove_from_collection [all_inputs] [get_ports XTAL1]]
-set_driving_cell -lib_cell PADDI -pin Y -library [get_libs $STD_LIB_slow] [remove_from_collection [all_inputs] [get_ports i_clk]]
+#set_driving_cell -lib_cell PADDI -pin Y -library [get_libs $STD_LIB_slow] [remove_from_collection [all_inputs] [get_ports i_clk]]
 
 #set_load [load_of $STD_LIB/PADDO/A] [get_ports {TDO XTAL2}]
-set_load [load_of PADDO/A] [all_outputs]
+set_load 0.02 [all_outputs]
 
 ##############################
 ##### Operating Condition ####
