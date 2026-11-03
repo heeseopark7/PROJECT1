@@ -26,9 +26,10 @@ sroute -connect { corePin } -layerChangeRange { Metal1(1) Metal11(11) } -blockPi
 
 ## Make Vertical Stripe in Core Area
 ## core is only ~27um wide -> thin stripes, small pitch
+## spacing 1 caused Metal10 Parallel_Run_Length_Spacing DRC (VDD/VSS) -> spacing 3
 setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
 
-addStripe -nets {VDD VSS} -layer Metal10 -direction vertical -width 1 -spacing 1 -set_to_set_distance 12 -start_from left -start_offset 3 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal11 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+addStripe -nets {VDD VSS} -layer Metal10 -direction vertical -width 1 -spacing 3 -set_to_set_distance 12 -start_from left -start_offset 3 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal11 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
 
 
 ## (No pad cells -> no outer ring, no 'sroute -connect padPin', no ring-to-ring stripes)
