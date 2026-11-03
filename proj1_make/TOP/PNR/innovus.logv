@@ -1,0 +1,921 @@
+[11/04 05:35:14      0s] 
+[11/04 05:35:14      0s] Cadence Innovus(TM) Implementation System.
+[11/04 05:35:14      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/04 05:35:14      0s] 
+[11/04 05:35:14      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[11/04 05:35:14      0s] Options:	
+[11/04 05:35:14      0s] Date:		Wed Nov  4 05:35:14 2026
+[11/04 05:35:14      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[11/04 05:35:14      0s] OS:		CentOS Linux 7 (Core)
+[11/04 05:35:14      0s] 
+[11/04 05:35:14      0s] License:
+[11/04 05:35:14      0s] 		[05:35:14.158609] Configured Lic search path (22.01-s003): 5280@localhost
+
+[11/04 05:35:14      0s] 		invs	Innovus Implementation System	22.1	Denied
+[11/04 05:35:14      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[11/04 05:35:14      0s] 		4 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/04 05:35:34     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[11/04 05:35:36     21s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[11/04 05:35:36     21s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[11/04 05:35:36     21s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[11/04 05:35:36     21s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[11/04 05:35:36     21s] @(#)CDS: CPE v22.17-s051
+[11/04 05:35:36     21s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[11/04 05:35:36     21s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[11/04 05:35:36     21s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[11/04 05:35:36     21s] @(#)CDS: RCDB 11.15.0
+[11/04 05:35:36     21s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[11/04 05:35:36     21s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[11/04 05:35:36     21s] Create and set the environment variable TMPDIR to /home/hah013/PROJ1/proj1_make/TOP/PNR/innovus_temp_54742_f2ba3674-e213-4ec5-a100-bfe13985fb8f_kopo-seongnam_hah013_QaYuSF.
+
+[11/04 05:35:37     21s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[11/04 05:35:39     24s] 
+[11/04 05:35:39     24s] **INFO:  MMMC transition support version v31-84 
+[11/04 05:35:39     24s] 
+[11/04 05:35:39     24s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/04 05:35:39     24s] <CMD> suppressMessage ENCEXT-2799
+[11/04 05:35:39     24s] <CMD> win
+[11/04 05:35:39     24s] <CMD> set enc_check_rename_command_name 1
+[11/04 05:36:38     33s] <CMD> restoreDesign InitDesign.dat
+[11/04 05:36:38     34s] #% Begin load design ... (date=11/04 05:36:38, mem=1372.7M)
+[11/04 05:36:38     34s] **ERROR: (IMPSYT-7338):	The specified design session directory '/home/hah013/PROJ1/proj1_make/TOP/PNR/InitDesign.dat' could not be located as specified. Check your file system, correct the location, and try restoring the design again.
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] ERROR: 
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s]     while executing
+[11/04 05:36:38     34s] "error $catchMsg"
+[11/04 05:36:38     34s]     (procedure "restoreDesign" line 33)
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename *
+[11/04 05:36:38     34s] **ERROR: Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename *
+[11/04 05:36:38     34s] **ERROR: Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] <CMD> globalNetConnect VDD -type tiehi -instanceBasename *
+[11/04 05:36:38     34s] **ERROR: Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] <CMD> globalNetConnect VSS -type tielo -instanceBasename *
+[11/04 05:36:38     34s] **ERROR: Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] Design must be in memory before running "globalNetConnect"
+[11/04 05:36:38     34s] <CMD> setTieHiLoMode -reset
+[11/04 05:36:38     34s] <CMD> setTieHiLoMode -cell {  TIELO TIEHI } -honorDontTouch false -createHierPort false
+[11/04 05:36:38     34s] **WARN: (IMPSP-5123):	Cell TIELO is not found.
+[11/04 05:36:38     34s] Type 'man IMPSP-5123' for more detail.
+[11/04 05:36:38     34s] **WARN: (IMPSP-5123):	Cell TIEHI is not found.
+[11/04 05:36:38     34s] Type 'man IMPSP-5123' for more detail.
+[11/04 05:36:38     34s] **ERROR: (IMPSP-5234):	No valid tie-cell name given in this string '  TIELO TIEHI '.
+
+[11/04 05:36:38     34s] Usage: setTieHiLoMode [-help] [-reset] [-cell {{tieCellList1} {tieCellList2} ...}] [-createHierPort {true|false}] [-honorDontTouch {true|false}]
+[11/04 05:36:38     34s]                       [-honorDontUse {true|false}] [-maxDistance <dist-in-microns>] [-maxFanout <nr-pins>] [-modulePrevention {true|false}]
+[11/04 05:36:38     34s]                       [-prefix <tie-prefix>] [-reportHierPort {true|false}]
+[11/04 05:36:38     34s] 
+[11/04 05:36:38     34s] **ERROR: (IMPTCM-10):	Failed to set value for option "-cell".
+
+[11/04 05:36:51     36s] <CMD> zoomBox -0.01900 -0.00900 0.11200 0.10800
+[11/04 05:36:52     36s] <CMD> zoomBox 0.01500 0.01400 0.09700 0.08700
+[11/04 05:37:28     41s] <CMD> set init_gnd_net VSS
+[11/04 05:37:28     41s] <CMD> set init_pwr_net VDD
+[11/04 05:37:28     41s] <CMD> set init_lef_file {../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/lef/gsclib045_tech.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+[11/04 05:37:28     41s] <CMD> set init_verilog ../SYN/mapped/uart_top_syn_final.v
+[11/04 05:37:28     41s] <CMD> set init_mmmc_file uart_top.mmmc.view
+[11/04 05:37:28     41s] <CMD> set init_top_cell uart_top
+[11/04 05:37:28     41s] <CMD> init_design
+[11/04 05:37:28     41s] report_message: '-start_cmd/-end_cmd' can not be nested. Retire previous calls.
+[11/04 05:37:28     42s] % Begin Load MMMC data ... (date=11/04 05:37:28, mem=1375.1M)
+[11/04 05:37:28     42s] % End Load MMMC data ... (date=11/04 05:37:28, total cpu=0:00:00.1, real=0:00:00.0, peak res=1376.2M, current mem=1376.2M)
+[11/04 05:37:28     42s] 
+[11/04 05:37:28     42s] Loading LEF file ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/lef/gsclib045_tech.lef ...
+[11/04 05:37:28     42s] Set DBUPerIGU to M2 pitch 400.
+[11/04 05:37:28     42s] 
+[11/04 05:37:28     42s] Loading LEF file ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+[11/04 05:37:28     42s] 
+[11/04 05:37:28     42s] Loading LEF file ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-58' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[11/04 05:37:28     42s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[11/04 05:37:28     42s] Type 'man IMPLF-61' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/04 05:37:28     42s] Type 'man IMPLF-200' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/04 05:37:28     42s] Type 'man IMPLF-200' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/04 05:37:28     42s] Type 'man IMPLF-200' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/04 05:37:28     42s] Type 'man IMPLF-200' for more detail.
+[11/04 05:37:28     42s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[11/04 05:37:28     42s] Type 'man IMPLF-200' for more detail.
+[11/04 05:37:28     42s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[11/04 05:37:28     42s] Loading view definition file from uart_top.mmmc.view
+[11/04 05:37:28     42s] Reading SS_Max_0p90v_125c timing library '/home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:28     42s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib)
+[11/04 05:37:29     43s] Read 489 cells in library 'slow_vdd1v0' 
+[11/04 05:37:29     43s] Reading SS_Max_0p90v_125c timing library '/home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib' ...
+[11/04 05:37:29     43s] **WARN: (TECHLIB-459):	Appending library 'slow_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:29     43s] Read 16 cells in library 'slow_vdd1v0' 
+[11/04 05:37:29     43s] Reading SS_Max_0p90v_125c timing library '/home/hah013/SoC/GPDK045/digital/giolib045_v3.5/timing/pads_SS_s1vg.lib' ...
+[11/04 05:37:29     43s] Read 8 cells in library 'giolib045' 
+[11/04 05:37:29     43s] Reading FF_Min_1p10v_0c timing library '/home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+[11/04 05:37:30     44s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[11/04 05:37:30     44s] Read 489 cells in library 'fast_vdd1v0' 
+[11/04 05:37:30     44s] Reading FF_Min_1p10v_0c timing library '/home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib' ...
+[11/04 05:37:30     44s] **WARN: (TECHLIB-459):	Appending library 'fast_vdd1v0' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /home/hah013/SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib)
+[11/04 05:37:30     44s] Read 16 cells in library 'fast_vdd1v0' 
+[11/04 05:37:30     44s] Reading FF_Min_1p10v_0c timing library '/home/hah013/SoC/GPDK045/digital/giolib045_v3.5/timing/pads_FF_s1vg.lib' ...
+[11/04 05:37:30     44s] Read 8 cells in library 'giolib045' 
+[11/04 05:37:30     44s] Ending "PreSetAnalysisView" (total cpu=0:00:01.9, real=0:00:02.0, peak res=1451.7M, current mem=1395.7M)
+[11/04 05:37:30     44s] *** End library_loading (cpu=0.03min, real=0.03min, mem=18.5M, fe_cpu=0.74min, fe_real=2.27min, fe_mem=1626.8M) ***
+[11/04 05:37:30     44s] % Begin Load netlist data ... (date=11/04 05:37:30, mem=1395.7M)
+[11/04 05:37:30     44s] *** Begin netlist parsing (mem=1626.8M) ***
+[11/04 05:37:30     44s] Pin 'VDD' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+[11/04 05:37:30     44s] Pin 'VSS' of cell 'SDFF4RX2' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+[11/04 05:37:30     44s] Pin 'VDD' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+[11/04 05:37:30     44s] Pin 'VSS' of cell 'SDFF4RX1' is declared as power/ground in timing library but as signal in LEF.  Treat it as power/ground.
+[11/04 05:37:30     44s] Created 513 new cells from 4 timing libraries.
+[11/04 05:37:30     44s] Reading netlist ...
+[11/04 05:37:30     44s] Backslashed names will retain backslash and a trailing blank character.
+[11/04 05:37:30     44s] Reading verilog netlist '../SYN/mapped/uart_top_syn_final.v'
+[11/04 05:37:30     44s] 
+[11/04 05:37:30     44s] *** Memory Usage v#1 (Current mem = 1626.793M, initial mem = 646.371M) ***
+[11/04 05:37:30     44s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1626.8M) ***
+[11/04 05:37:30     44s] % End Load netlist data ... (date=11/04 05:37:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=1406.3M, current mem=1406.3M)
+[11/04 05:37:30     44s] Set top cell to uart_top.
+[11/04 05:37:31     44s] Hooked 1026 DB cells to tlib cells.
+[11/04 05:37:31     44s] ** Removed 8 unused lib cells.
+[11/04 05:37:31     44s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1426.4M, current mem=1426.4M)
+[11/04 05:37:31     44s] Starting recursive module instantiation check.
+[11/04 05:37:31     44s] No recursion found.
+[11/04 05:37:31     44s] Building hierarchical netlist for Cell uart_top ...
+[11/04 05:37:31     44s] ***** UseNewTieNetMode *****.
+[11/04 05:37:31     44s] *** Netlist is unique.
+[11/04 05:37:31     44s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[11/04 05:37:31     44s] ** info: there are 1093 modules.
+[11/04 05:37:31     44s] ** info: there are 152 stdCell insts.
+[11/04 05:37:31     44s] ** info: there are 152 stdCell insts with at least one signal pin.
+[11/04 05:37:31     44s] 
+[11/04 05:37:31     44s] *** Memory Usage v#1 (Current mem = 1690.219M, initial mem = 646.371M) ***
+[11/04 05:37:31     44s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/04 05:37:31     44s] Type 'man IMPFP-3961' for more detail.
+[11/04 05:37:31     44s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/04 05:37:31     44s] Type 'man IMPFP-3961' for more detail.
+[11/04 05:37:31     44s] Start create_tracks
+[11/04 05:37:31     44s] Extraction setup Started 
+[11/04 05:37:31     44s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[11/04 05:37:31     44s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[11/04 05:37:31     44s] Type 'man IMPEXT-6202' for more detail.
+[11/04 05:37:31     44s] Reading Capacitance Table File ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+[11/04 05:37:31     44s] Cap table was created using Encounter 10.10-b056_1.
+[11/04 05:37:31     44s] Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+[11/04 05:37:31     44s] Set Shrink Factor to 0.90000
+[11/04 05:37:31     44s] Reading Capacitance Table File ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl ...
+[11/04 05:37:31     44s] Cap table was created using Encounter 10.10-b056_1.
+[11/04 05:37:31     44s] Process name: cln28hpl_1p10m+alrdl_5x2yu2yz_typical.
+[11/04 05:37:31     44s] Set Shrink Factor to 0.90000
+[11/04 05:37:31     44s] Importing multi-corner RC tables ... 
+[11/04 05:37:31     44s] Summary of Active RC-Corners : 
+[11/04 05:37:31     44s]  
+[11/04 05:37:31     44s]  Analysis View: FUNC_SS_WORST
+[11/04 05:37:31     44s]     RC-Corner Name        : WORST
+[11/04 05:37:31     44s]     RC-Corner Index       : 0
+[11/04 05:37:31     44s]     RC-Corner Temperature : 125 Celsius
+[11/04 05:37:31     44s]     RC-Corner Cap Table   : '../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[11/04 05:37:31     44s]     RC-Corner PreRoute Res Factor         : 1
+[11/04 05:37:31     44s]     RC-Corner PreRoute Cap Factor         : 1
+[11/04 05:37:31     44s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[11/04 05:37:31     44s]     RC-Corner Technology file: '../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+[11/04 05:37:31     44s]  
+[11/04 05:37:31     44s]  Analysis View: FUNC_FF_BEST
+[11/04 05:37:31     44s]     RC-Corner Name        : BEST
+[11/04 05:37:31     44s]     RC-Corner Index       : 1
+[11/04 05:37:31     44s]     RC-Corner Temperature : 0 Celsius
+[11/04 05:37:31     44s]     RC-Corner Cap Table   : '../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl'
+[11/04 05:37:31     44s]     RC-Corner PreRoute Res Factor         : 1
+[11/04 05:37:31     44s]     RC-Corner PreRoute Cap Factor         : 1
+[11/04 05:37:31     44s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[11/04 05:37:31     44s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[11/04 05:37:31     44s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[11/04 05:37:31     44s]     RC-Corner Technology file: '../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+[11/04 05:37:31     44s] Technology file '../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch' associated with first view 'FUNC_SS_WORST' will be used as the primary corner for the multi-corner extraction.
+[11/04 05:37:31     44s] eee: RC Grid memory allocated = 1188 (3 X 3 X 11 X 12b)
+[11/04 05:37:31     44s] Updating RC Grid density data for preRoute extraction ...
+[11/04 05:37:31     44s] eee: pegSigSF=1.070000
+[11/04 05:37:31     44s] Initializing multi-corner capacitance tables ... 
+[11/04 05:37:31     45s] Initializing multi-corner resistance tables ...
+[11/04 05:37:31     45s] Creating RPSQ from WeeR and WRes ...
+[11/04 05:37:31     45s] Creating RPSQ from WeeR and WRes ...
+[11/04 05:37:31     45s] eee: Grid unit RC data computation started
+[11/04 05:37:31     45s] eee: Grid unit RC data computation completed
+[11/04 05:37:31     45s] eee: l=1 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=2 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=3 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=4 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=5 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=6 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=7 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=8 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=9 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=10 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] eee: l=11 avDens=0.000000 usedTrk=0.000000 availTrk=0.000000 sigTrk=0.000000
+[11/04 05:37:31     45s] {RT WORST 0 11 11 {7 0} {10 0} 2}
+[11/04 05:37:31     45s] eee: LAM-FP: thresh=1 ; dimX=147.578947 ; dimY=135.000000 ; multX=1.000000 ; multY=1.000000 ; minP=380 ; fpMult=1.000000 ;
+[11/04 05:37:31     45s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 pModAss=50 wcR=0.772700 crit=0.000000 siPrev=0 newSi=0.000000 wHLS=1.931800 viaL=0.000000 shortMod=0.000000 fModUnas=0.000000 fModAs=0.000000 pDens=0.500000 
+[11/04 05:37:31     45s] eee: NetCapCache creation started. (Current Mem: 1861.352M) 
+[11/04 05:37:31     45s] eee: NetCapCache completed. (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  Curr Mem: 1861.352M) 
+[11/04 05:37:31     45s] eee: dbu = 2000, Design = [ll(0.000000, 0.000000) ur(28.040000, 25.650000)], Layers = [f(11) b(0)], Grid size = 17.100000 um, Grid Dim = (2 X 2)
+[11/04 05:37:31     45s] eee: Metal Layers Info:
+[11/04 05:37:31     45s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/04 05:37:31     45s] eee: |   Layer  |  Id |    W    |    S    |    P    |   uC   |   uR   | D | T | wS |
+[11/04 05:37:31     45s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/04 05:37:31     45s] eee: |   Metal1 |   1 |   0.060 |   0.060 |   0.190 |  0.161 |   4.65 | H | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal2 |   2 |   0.080 |   0.070 |   0.200 |  0.161 |   4.53 | V | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal3 |   3 |   0.080 |   0.070 |   0.190 |  0.161 |   4.72 | H | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal4 |   4 |   0.080 |   0.070 |   0.200 |  0.159 |   4.53 | V | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal5 |   5 |   0.080 |   0.070 |   0.190 |  0.161 |   4.72 | H | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal6 |   6 |   0.080 |   0.070 |   0.200 |  0.158 |   4.53 | V | 0 |  4 |
+[11/04 05:37:31     45s] eee: |   Metal7 |   7 |   0.080 |   0.070 |   0.190 |  0.328 |   1.50 | H | 0 |  5 |
+[11/04 05:37:31     45s] eee: |   Metal8 |   8 |   0.080 |   0.070 |   0.200 |  0.351 |   1.36 | V | 0 |  5 |
+[11/04 05:37:31     45s] eee: |   Metal9 |   9 |   0.080 |   0.070 |   0.190 |  0.679 |   0.59 | H | 0 |  5 |
+[11/04 05:37:31     45s] eee: |  Metal10 |  10 |   0.220 |   0.200 |   0.500 |  0.370 |   0.21 | V | 0 |  4 |
+[11/04 05:37:31     45s] eee: |  Metal11 |  11 |   0.220 |   0.200 |   0.475 |  1.032 |   0.13 | H | 0 |  3 |
+[11/04 05:37:31     45s] eee: +----------+-----+---------+---------+---------+--------+--------+---+---+----+
+[11/04 05:37:31     45s] eee: uC/uR for corner WORST, min-width/min-spacing, 30 perc over/under densities.
+[11/04 05:37:31     45s] eee: +-----------------------NDR Info-----------------------+
+[11/04 05:37:31     45s] eee: Number of NDR:: 2,  Number of Fake NDR:: 0
+[11/04 05:37:31     45s] eee: +----------------------------------------------------+
+[11/04 05:37:31     45s] eee: | NDR Name:: LEFSpecialRouteSpec  | Id:: 1  | isHard:: 0 
+[11/04 05:37:31     45s] eee: +----------------------------------------------------+
+[11/04 05:37:31     45s] eee: +----------------------------------------------------+
+[11/04 05:37:31     45s] eee: | NDR Name:: VLMDefaultSetup  | Id:: 2  | isHard:: 0 
+[11/04 05:37:31     45s] eee: +----------------------------------------------------+
+[11/04 05:37:31     45s] *Info: initialize multi-corner CTS.
+[11/04 05:37:31     45s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1697.7M, current mem=1460.5M)
+[11/04 05:37:32     45s] Reading timing constraints file '../SYN/mapped/uart_top_syn_final.sdc' ...
+[11/04 05:37:32     45s] Current (total cpu=0:00:45.5, real=0:02:18, peak res=1833.7M, current mem=1833.7M)
+[11/04 05:37:32     45s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../SYN/mapped/uart_top_syn_final.sdc, Line 9).
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../SYN/mapped/uart_top_syn_final.sdc, Line 10).
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] **WARN: (TCLCMD-1014):	The SDC set_operating_conditions assertion is not supported. Please use the create_delay_corner command to specify the desired operating enviroment. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File ../SYN/mapped/uart_top_syn_final.sdc, Line 28).
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPCTE-290):	Could not locate cell DFFHQX1 in any library for view FUNC_SS_WORST.
+[11/04 05:37:32     45s] Type 'man IMPCTE-290' for more detail.
+[11/04 05:37:32     45s] INFO (CTE): Reading of timing constraints file ../SYN/mapped/uart_top_syn_final.sdc completed, with 3 WARNING
+[11/04 05:37:32     45s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1846.1M, current mem=1846.1M)
+[11/04 05:37:32     45s] Current (total cpu=0:00:45.6, real=0:02:18, peak res=1846.1M, current mem=1846.1M)
+[11/04 05:37:32     45s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/04 05:37:32     45s] Summary for sequential cells identification: 
+[11/04 05:37:32     45s]   Identified SBFF number: 104
+[11/04 05:37:32     45s]   Identified MBFF number: 16
+[11/04 05:37:32     45s]   Identified SB Latch number: 0
+[11/04 05:37:32     45s]   Identified MB Latch number: 0
+[11/04 05:37:32     45s]   Not identified SBFF number: 16
+[11/04 05:37:32     45s]   Not identified MBFF number: 0
+[11/04 05:37:32     45s]   Not identified SB Latch number: 0
+[11/04 05:37:32     45s]   Not identified MB Latch number: 0
+[11/04 05:37:32     45s]   Number of sequential cells which are not FFs: 32
+[11/04 05:37:32     45s] Total number of combinational cells: 318
+[11/04 05:37:32     45s] Total number of sequential cells: 168
+[11/04 05:37:32     45s] Total number of tristate cells: 10
+[11/04 05:37:32     45s] Total number of level shifter cells: 0
+[11/04 05:37:32     45s] Total number of power gating cells: 0
+[11/04 05:37:32     45s] Total number of isolation cells: 0
+[11/04 05:37:32     45s] Total number of power switch cells: 0
+[11/04 05:37:32     45s] Total number of pulse generator cells: 0
+[11/04 05:37:32     45s] Total number of always on buffers: 0
+[11/04 05:37:32     45s] Total number of retention cells: 0
+[11/04 05:37:32     45s] Total number of physical cells: 9
+[11/04 05:37:32     45s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[11/04 05:37:32     45s] Total number of usable buffers: 16
+[11/04 05:37:32     45s] List of unusable buffers:
+[11/04 05:37:32     45s] Total number of unusable buffers: 0
+[11/04 05:37:32     45s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[11/04 05:37:32     45s] Total number of usable inverters: 19
+[11/04 05:37:32     45s] List of unusable inverters:
+[11/04 05:37:32     45s] Total number of unusable inverters: 0
+[11/04 05:37:32     45s] List of identified usable delay cells:
+[11/04 05:37:32     45s] Total number of identified usable delay cells: 0
+[11/04 05:37:32     45s] List of identified unusable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[11/04 05:37:32     45s] Total number of identified unusable delay cells: 8
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[11/04 05:37:32     45s] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Deleting Cell Server Begin ...
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Deleting Cell Server End ...
+[11/04 05:37:32     45s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1866.0M, current mem=1865.9M)
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[11/04 05:37:32     45s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[11/04 05:37:32     45s] Summary for sequential cells identification: 
+[11/04 05:37:32     45s]   Identified SBFF number: 104
+[11/04 05:37:32     45s]   Identified MBFF number: 16
+[11/04 05:37:32     45s]   Identified SB Latch number: 0
+[11/04 05:37:32     45s]   Identified MB Latch number: 0
+[11/04 05:37:32     45s]   Not identified SBFF number: 16
+[11/04 05:37:32     45s]   Not identified MBFF number: 0
+[11/04 05:37:32     45s]   Not identified SB Latch number: 0
+[11/04 05:37:32     45s]   Not identified MB Latch number: 0
+[11/04 05:37:32     45s]   Number of sequential cells which are not FFs: 32
+[11/04 05:37:32     45s]  Visiting view : FUNC_SS_WORST
+[11/04 05:37:32     45s]    : PowerDomain = none : Weighted F : unweighted  = 36.80 (1.000) with rcCorner = 0
+[11/04 05:37:32     45s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[11/04 05:37:32     45s]  Visiting view : FUNC_FF_BEST
+[11/04 05:37:32     45s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 1
+[11/04 05:37:32     45s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[11/04 05:37:32     45s] TLC MultiMap info (StdDelay):
+[11/04 05:37:32     45s]   : FF_BEST + FF_Min_1p10v_0c + 1 + no RcCorner := 5.3ps
+[11/04 05:37:32     45s]   : FF_BEST + FF_Min_1p10v_0c + 1 + BEST := 11.9ps
+[11/04 05:37:32     45s]   : SS_WORST + SS_Max_0p90v_125c + 1 + no RcCorner := 20.1ps
+[11/04 05:37:32     45s]   : SS_WORST + SS_Max_0p90v_125c + 1 + WORST := 36.8ps
+[11/04 05:37:32     45s]  Setting StdDelay to: 36.8ps
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Deleting Cell Server Begin ...
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] TimeStamp Deleting Cell Server End ...
+[11/04 05:37:32     45s] % Begin Load MMMC data post ... (date=11/04 05:37:32, mem=1866.4M)
+[11/04 05:37:32     45s] % End Load MMMC data post ... (date=11/04 05:37:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=1866.4M, current mem=1866.4M)
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] *** Summary of all messages that are not suppressed in this session:
+[11/04 05:37:32     45s] Severity  ID               Count  Summary                                  
+[11/04 05:37:32     45s] WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+[11/04 05:37:32     45s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[11/04 05:37:32     45s] WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[11/04 05:37:32     45s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[11/04 05:37:32     45s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[11/04 05:37:32     45s] WARNING   IMPCTE-290           8  Could not locate cell %s in any library ...
+[11/04 05:37:32     45s] WARNING   TCLCMD-1014          1  The SDC set_operating_conditions asserti...
+[11/04 05:37:32     45s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[11/04 05:37:32     45s] WARNING   TECHLIB-302         40  No function defined for cell '%s'. The c...
+[11/04 05:37:32     45s] WARNING   TECHLIB-459          2  Appending library '%s' to the previously...
+[11/04 05:37:32     45s] *** Message Summary: 78 warning(s), 0 error(s)
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] <CMD> checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -spef -floorplan -place -outdir checkDesign
+[11/04 05:37:32     45s] Creating directory checkDesign.
+[11/04 05:37:32     45s] **WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+[11/04 05:37:32     45s] OPERPROF: Starting checkPlace at level 1, MEM:2139.6M, EPOCH TIME: 1793738252.295341
+[11/04 05:37:32     45s] Processing tracks to init pin-track alignment.
+[11/04 05:37:32     45s] z: 2, totalTracks: 1
+[11/04 05:37:32     45s] z: 4, totalTracks: 1
+[11/04 05:37:32     45s] z: 6, totalTracks: 1
+[11/04 05:37:32     45s] z: 8, totalTracks: 1
+[11/04 05:37:32     45s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[11/04 05:37:32     45s] Cell uart_top LLGs are deleted
+[11/04 05:37:32     45s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] # Building uart_top llgBox search-tree.
+[11/04 05:37:32     45s] OPERPROF:   Starting SiteArray-Init at level 2, MEM:2146.6M, EPOCH TIME: 1793738252.392186
+[11/04 05:37:32     45s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] OPERPROF:     Starting SiteArray-Init-FPlan at level 3, MEM:2146.6M, EPOCH TIME: 1793738252.393217
+[11/04 05:37:32     45s] Max number of tech site patterns supported in site array is 256.
+[11/04 05:37:32     45s] Core basic site is CoreSite
+[11/04 05:37:32     45s] DP-Init: Signature of floorplan is 6a2a0d42ad0fb800. Signature of routing blockage is 0.
+[11/04 05:37:32     45s] After signature check, allow fast init is false, keep pre-filter is false.
+[11/04 05:37:32     45s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[11/04 05:37:32     45s] Use non-trimmed site array because memory saving is not enough.
+[11/04 05:37:32     45s] SiteArray: non-trimmed site array dimensions = 15 x 140
+[11/04 05:37:32     45s] SiteArray: use 20,480 bytes
+[11/04 05:37:32     45s] SiteArray: current memory after site array memory allocation 2146.6M
+[11/04 05:37:32     45s] SiteArray: FP blocked sites are writable
+[11/04 05:37:32     45s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x45fda180): Create thread pool 0x7f0017ed0200.
+[11/04 05:37:32     45s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x45fda180): 0 out of 1 thread pools are available.
+[11/04 05:37:32     45s] Keep-away cache is enable on metals: 1-11
+[11/04 05:37:32     45s] Estimated cell power/ground rail width = 0.213 um
+[11/04 05:37:32     45s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[11/04 05:37:32     45s] OPERPROF:       Starting Routing-Blockage-From-Wire-Via-StBox at level 4, MEM:2275.6M, EPOCH TIME: 1793738252.414721
+[11/04 05:37:32     45s] Process 0 (called=0 computed=0) wires and vias for routing blockage analysis
+[11/04 05:37:32     45s] OPERPROF:       Finished Routing-Blockage-From-Wire-Via-StBox at level 4, CPU:0.000, REAL:0.000, MEM:2275.6M, EPOCH TIME: 1793738252.414801
+[11/04 05:37:32     45s] SiteArray: number of non floorplan blocked sites for llg default is 2100
+[11/04 05:37:32     45s] Atter site array init, number of instance map data is 0.
+[11/04 05:37:32     45s] OPERPROF:     Finished SiteArray-Init-FPlan at level 3, CPU:0.020, REAL:0.022, MEM:2275.6M, EPOCH TIME: 1793738252.415022
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Scanning PG Shapes for Pre-Colorizing...Done.
+[11/04 05:37:32     45s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/04 05:37:32     45s]  Pre_CCE_Colorizing is not ON! (0:0:583:0)
+[11/04 05:37:32     45s] OPERPROF:   Finished SiteArray-Init at level 2, CPU:0.020, REAL:0.023, MEM:2275.6M, EPOCH TIME: 1793738252.415328
+[11/04 05:37:32     45s] Begin checking placement ... (start mem=2139.6M, init mem=2275.6M)
+[11/04 05:37:32     45s] Begin checking exclusive groups violation ...
+[11/04 05:37:32     45s] There are 0 groups to check, max #box is 0, total #box is 0
+[11/04 05:37:32     45s] Finished checking exclusive groups violations. Found 0 Vio.
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Running CheckPlace using 1 thread in normal mode...
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] ...checkPlace normal is done!
+[11/04 05:37:32     45s] OPERPROF:   Starting checkPlace/Vio-Check at level 2, MEM:2275.6M, EPOCH TIME: 1793738252.415764
+[11/04 05:37:32     45s] OPERPROF:   Finished checkPlace/Vio-Check at level 2, CPU:0.000, REAL:0.000, MEM:2275.6M, EPOCH TIME: 1793738252.415824
+[11/04 05:37:32     45s] *info: Recommended don't use cell = 0           
+[11/04 05:37:32     45s] *info: Placed = 0             
+[11/04 05:37:32     45s] *info: Unplaced = 152         
+[11/04 05:37:32     45s] Placement Density:70.09%(503/718)
+[11/04 05:37:32     45s] Placement Density (including fixed std cells):70.09%(503/718)
+[11/04 05:37:32     45s] Cell uart_top LLGs are deleted
+[11/04 05:37:32     45s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] # Resetting pin-track-align track data.
+[11/04 05:37:32     45s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     45s] Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=2275.6M)
+[11/04 05:37:32     45s] OPERPROF: Finished checkPlace at level 1, CPU:0.120, REAL:0.122, MEM:2275.6M, EPOCH TIME: 1793738252.417269
+[11/04 05:37:32     45s] ############################################################################
+[11/04 05:37:32     45s] # Innovus Netlist Design Rule Check
+[11/04 05:37:32     45s] # Wed Nov  4 05:37:32 2026
+############################################################################
+[11/04 05:37:32     45s] Design: uart_top
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] ------ Design Summary:
+[11/04 05:37:32     45s] Total Standard Cell Number   (cells) : 152
+[11/04 05:37:32     45s] Total Block Cell Number      (cells) : 0
+[11/04 05:37:32     45s] Total I/O Pad Cell Number    (cells) : 0
+[11/04 05:37:32     45s] Total Standard Cell Area     ( um^2) : 503.42
+[11/04 05:37:32     45s] Total Block Cell Area        ( um^2) : 0.00
+[11/04 05:37:32     45s] Total I/O Pad Cell Area      ( um^2) : 0.00
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] ------ Design Statistics:
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Number of Instances            : 152
+[11/04 05:37:32     45s] Number of Non-uniquified Insts : 139
+[11/04 05:37:32     45s] Number of Nets                 : 185
+[11/04 05:37:32     45s] Average number of Pins per Net : 3.16
+[11/04 05:37:32     45s] Maximum number of Pins in Net  : 46
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] ------ I/O Port summary
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Number of Primary I/O Ports    : 5
+[11/04 05:37:32     45s] Number of Input Ports          : 3
+[11/04 05:37:32     45s] Number of Output Ports         : 2
+[11/04 05:37:32     45s] Number of Bidirectional Ports  : 0
+[11/04 05:37:32     45s] Number of Power/Ground Ports   : 0
+[11/04 05:37:32     45s] Number of Floating Ports                     *: 0
+[11/04 05:37:32     45s] Number of Ports Connected to Multiple Pads   *: 0
+[11/04 05:37:32     45s] Number of Ports Connected to Core Instances   : 5
+[11/04 05:37:32     45s] **WARN: (IMPREPO-202):	There are 5 Ports connected to core instances.
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] ------ Design Rule Checking:
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Number of Output Pins connect to Power/Ground *: 0
+[11/04 05:37:32     45s] Number of Insts with Input Pins tied together ?: 0
+[11/04 05:37:32     45s] Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+[11/04 05:37:32     45s] **WARN: (IMPDB-2136):	Input term 'RN' of  instance 'dut3/r_rx_sync1_reg' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+[11/04 05:37:32     45s] **WARN: (IMPDB-2136):	Input term 'RN' of  instance 'dut3/r_rx_sync2_reg' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+[11/04 05:37:32     45s] Number of Input/InOut Floating Pins            : 2
+[11/04 05:37:32     45s] Number of Output Floating Pins                 : 0
+[11/04 05:37:32     45s] Number of Output Term Marked TieHi/Lo         *: 0
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] **WARN: (IMPREPO-218):	There are 2 Floating Instance terminals.
+[11/04 05:37:32     45s] Number of nets with tri-state drivers          : 0
+[11/04 05:37:32     45s] Number of nets with parallel drivers           : 0
+[11/04 05:37:32     45s] Number of nets with multiple drivers           : 0
+[11/04 05:37:32     45s] Number of nets with no driver (No FanIn)       : 0
+[11/04 05:37:32     45s] Number of Output Floating nets (No FanOut)     : 13
+[11/04 05:37:32     45s] Number of High Fanout nets (>50)               : 0
+[11/04 05:37:32     45s] **WARN: (IMPREPO-213):	There are 5 I/O Pins connected to Non-IO Insts.
+[11/04 05:37:32     45s] Checking routing tracks.....
+[11/04 05:37:32     45s] Checking other grids.....
+[11/04 05:37:32     45s] Checking routing blockage.....
+[11/04 05:37:32     45s] Checking components.....
+[11/04 05:37:32     45s] Checking constraints (guide/region/fence).....
+[11/04 05:37:32     45s] Checking groups.....
+[11/04 05:37:32     45s] Checking Ptn Core Box.....
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Checking Preroutes.....
+[11/04 05:37:32     45s] No. of regular pre-routes not on tracks : 0 
+[11/04 05:37:32     45s]  Design check done.
+[11/04 05:37:32     45s] Report saved in file checkDesign/uart_top.main.htm.ascii
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] *** Summary of all messages that are not suppressed in this session:
+[11/04 05:37:32     45s] Severity  ID               Count  Summary                                  
+[11/04 05:37:32     45s] WARNING   IMPDB-2136           2  %s term '%s' of %s instance '%s' does no...
+[11/04 05:37:32     45s] WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+[11/04 05:37:32     45s] WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+[11/04 05:37:32     45s] WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+[11/04 05:37:32     45s] WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+[11/04 05:37:32     45s] *** Message Summary: 6 warning(s), 0 error(s)
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] <CMD> floorPlan -site CoreSite -r 1.0 0.7 30.0 30.0 30.0 30.0
+[11/04 05:37:32     45s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/04 05:37:32     45s] Type 'man IMPFP-3961' for more detail.
+[11/04 05:37:32     45s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[11/04 05:37:32     45s] Type 'man IMPFP-3961' for more detail.
+[11/04 05:37:32     45s] Start create_tracks
+[11/04 05:37:32     45s] <CMD> setPinAssignMode -pinEditInBatch true
+[11/04 05:37:32     45s] <CMD> editPin -pin {i_clk i_nRst i_rx} -side Left -layer 3 -spreadType center -spacing 4.0 -fixOverlap 1 -fixedPin 1 -snap TRACK
+[11/04 05:37:32     45s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 inst_orient=1 via=610195162 routing_via=1 timing=1 sns=1 ppa_info=1
+[11/04 05:37:32     45s] Successfully spread [3] pins.
+[11/04 05:37:32     45s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2277.6M).
+[11/04 05:37:32     45s] <CMD> editPin -pin {o_tx o_led_ctrl} -side Right -layer 3 -spreadType center -spacing 4.0 -fixOverlap 1 -fixedPin 1 -snap TRACK
+[11/04 05:37:32     45s] Successfully spread [2] pins.
+[11/04 05:37:32     45s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2277.6M).
+[11/04 05:37:32     45s] <CMD> setPinAssignMode -pinEditInBatch false
+[11/04 05:37:32     45s] <CMD> report_analysis_views
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] Multi-Mode Analysis View Report
+[11/04 05:37:32     45s] _______________________________
+[11/04 05:37:32     45s] 
+[11/04 05:37:32     45s] + ALL Views
+[11/04 05:37:32     45s]    |
+[11/04 05:37:32     45s]    + Analysis View:  FUNC_SS_WORST
+[11/04 05:37:32     45s]      |
+[11/04 05:37:32     45s]      + Delay Calc Corner: SS_WORST
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + library_set: SS_Max_0p90v_125c
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + timing: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib
+[11/04 05:37:32     45s]                              ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_multibitsDFF.lib
+[11/04 05:37:32     45s]                              ../../../../SoC/GPDK045/digital/giolib045_v3.5/timing/pads_SS_s1vg.lib
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + rc_corner: WORST
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + cap_table: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + T: 125
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_res: 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_res: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_cap: 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_cap: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_xcap: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_clkcap: 0
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_clkcap: 0 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_clkres: 0
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_clkres: 0 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + qx_tech_file: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + si_enabled: true
+[11/04 05:37:32     45s]      |
+[11/04 05:37:32     45s]      + Constraint Mode: FUNC
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + SDC Constraint Files: ../SYN/mapped/uart_top_syn_final.sdc
+[11/04 05:37:32     45s]    |
+[11/04 05:37:32     45s]    + Analysis View:  FUNC_FF_BEST
+[11/04 05:37:32     45s]      |
+[11/04 05:37:32     45s]      + Delay Calc Corner: FF_BEST
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + library_set: FF_Min_1p10v_0c
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + timing: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib
+[11/04 05:37:32     45s]                              ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_multibitsDFF.lib
+[11/04 05:37:32     45s]                              ../../../../SoC/GPDK045/digital/giolib045_v3.5/timing/pads_FF_s1vg.lib
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + rc_corner: BEST
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + cap_table: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + T: 0
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_res: 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_res: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_cap: 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_cap: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_xcap: 1 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_clkcap: 0
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_clkcap: 0 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + preRoute_clkres: 0
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + postRoute_clkres: 0 1 1
+[11/04 05:37:32     45s]      |   |    |
+[11/04 05:37:32     45s]      |   |    + qx_tech_file: ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + si_enabled: true
+[11/04 05:37:32     45s]      |
+[11/04 05:37:32     45s]      + Constraint Mode: FUNC
+[11/04 05:37:32     45s]      |   |
+[11/04 05:37:32     45s]      |   + SDC Constraint Files: ../SYN/mapped/uart_top_syn_final.sdc
+[11/04 05:37:32     45s]    |
+[11/04 05:37:32     45s] <CMD> timeDesign -prePlace
+[11/04 05:37:32     46s] *** timeDesign #1 [begin] () : totSession cpu/real = 0:00:46.0/0:02:16.3 (0.3), mem = 2277.6M
+[11/04 05:37:32     46s] Info: 1 threads available for lower-level modules during optimization.
+[11/04 05:37:32     46s] Set Using Default Delay Limit as 101.
+[11/04 05:37:32     46s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[11/04 05:37:32     46s] Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+[11/04 05:37:32     46s] Set Default Net Delay as 0 ps.
+[11/04 05:37:32     46s] Set Default Net Load as 0 pF. 
+[11/04 05:37:32     46s] Set Default Input Pin Transition as 1 ps.
+[11/04 05:37:32     46s] INFO: setAnalysisMode clkSrcPath true -> false
+[11/04 05:37:32     46s] INFO: setAnalysisMode clockPropagation sdcControl -> forcedIdeal
+[11/04 05:37:32     46s] Effort level <high> specified for reg2reg path_group
+[11/04 05:37:32     46s] Cell uart_top LLGs are deleted
+[11/04 05:37:32     46s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] OPERPROF: Starting SiteArray-Init at level 1, MEM:2312.5M, EPOCH TIME: 1793738252.679032
+[11/04 05:37:32     46s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] OPERPROF:   Starting SiteArray-Init-FPlan at level 2, MEM:2312.5M, EPOCH TIME: 1793738252.680493
+[11/04 05:37:32     46s] Max number of tech site patterns supported in site array is 256.
+[11/04 05:37:32     46s] Core basic site is CoreSite
+[11/04 05:37:32     46s] DP-Init: Signature of floorplan is b78f4ba3dad2ec00. Signature of routing blockage is 0.
+[11/04 05:37:32     46s] After signature check, allow fast init is false, keep pre-filter is false.
+[11/04 05:37:32     46s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[11/04 05:37:32     46s] SiteArray: non-trimmed site array dimensions = 15 x 141
+[11/04 05:37:32     46s] SiteArray: use 20,480 bytes
+[11/04 05:37:32     46s] SiteArray: current memory after site array memory allocation 2312.5M
+[11/04 05:37:32     46s] SiteArray: FP blocked sites are writable
+[11/04 05:37:32     46s] OPERPROF:     Starting Routing-Blockage-From-Wire-Via-StBox at level 3, MEM:2312.5M, EPOCH TIME: 1793738252.704760
+[11/04 05:37:32     46s] Process 0 (called=0 computed=0) wires and vias for routing blockage analysis
+[11/04 05:37:32     46s] OPERPROF:     Finished Routing-Blockage-From-Wire-Via-StBox at level 3, CPU:0.000, REAL:0.000, MEM:2312.5M, EPOCH TIME: 1793738252.704852
+[11/04 05:37:32     46s] SiteArray: number of non floorplan blocked sites for llg default is 2115
+[11/04 05:37:32     46s] Atter site array init, number of instance map data is 0.
+[11/04 05:37:32     46s] OPERPROF:   Finished SiteArray-Init-FPlan at level 2, CPU:0.030, REAL:0.025, MEM:2312.5M, EPOCH TIME: 1793738252.705047
+[11/04 05:37:32     46s] 
+[11/04 05:37:32     46s] Verbose-2062: PG Shapes are colorized in Pre_CCE_Colorize flow.
+[11/04 05:37:32     46s]  Pre_CCE_Colorizing is not ON! (0:0:583:0)
+[11/04 05:37:32     46s] OPERPROF: Finished SiteArray-Init at level 1, CPU:0.030, REAL:0.026, MEM:2312.5M, EPOCH TIME: 1793738252.705304
+[11/04 05:37:32     46s] Cell uart_top LLGs are deleted
+[11/04 05:37:32     46s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[11/04 05:37:32     46s] Starting delay calculation for Setup views
+[11/04 05:37:32     46s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[11/04 05:37:33     46s] AAE DB initialization (MEM=2347.36 CPU=0:00:00.0 REAL=0:00:00.0) 
+[11/04 05:37:33     46s] #################################################################################
+[11/04 05:37:33     46s] # Design Stage: PreRoute
+[11/04 05:37:33     46s] # Design Name: uart_top
+[11/04 05:37:33     46s] # Design Mode: 90nm
+[11/04 05:37:33     46s] # Analysis Mode: MMMC Non-OCV 
+[11/04 05:37:33     46s] # Parasitics Mode: No SPEF/RCDB 
+[11/04 05:37:33     46s] # Signoff Settings: SI Off 
+[11/04 05:37:33     46s] #################################################################################
+[11/04 05:37:33     46s] Calculate delays in BcWc mode...
+[11/04 05:37:33     46s] Topological Sorting (REAL = 0:00:00.0, MEM = 2371.4M, InitMEM = 2371.4M)
+[11/04 05:37:33     46s] Start delay calculation (fullDC) (1 T). (MEM=2380.97)
+[11/04 05:37:33     46s] Start AAE Lib Loading. (MEM=2380.97)
+[11/04 05:37:33     46s] End AAE Lib Loading. (MEM=2601.05 CPU=0:00:00.0 Real=0:00:00.0)
+[11/04 05:37:33     46s] End AAE Lib Interpolated Model. (MEM=2601.05 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/04 05:37:33     46s] Total number of fetched objects 172
+[11/04 05:37:33     46s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/04 05:37:33     46s] End delay calculation. (MEM=2789.35 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/04 05:37:33     47s] End delay calculation (fullDC). (MEM=2481.35 CPU=0:00:00.4 REAL=0:00:00.0)
+[11/04 05:37:33     47s] *** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 2481.4M) ***
+[11/04 05:37:33     47s] *** Done Building Timing Graph (cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:47.1 mem=2481.4M)
+[11/04 05:37:33     47s] 
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ FUNC_SS_WORST 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  5.700  |  5.700  |  6.690  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   92    |   44    |   48    |
++--------------------+---------+---------+---------+
+
+Density: 69.598%
+------------------------------------------------------------------
+
+[11/04 05:37:33     47s] Set Using Default Delay Limit as 1000.
+[11/04 05:37:33     47s] Resetting back High Fanout Nets as non-ideal
+[11/04 05:37:33     47s] Set Default Net Delay as 1000 ps.
+[11/04 05:37:33     47s] Set Default Input Pin Transition as 0.1 ps.
+[11/04 05:37:33     47s] Set Default Net Load as 0.5 pF. 
+[11/04 05:37:33     47s] Reported timing to dir ./timingReports
+[11/04 05:37:33     47s] Total CPU time: 1.26 sec
+[11/04 05:37:33     47s] Total Real time: 1.0 sec
+[11/04 05:37:33     47s] Total Memory Usage: 2412.832031 Mbytes
+[11/04 05:37:33     47s] Info: pop threads available for lower-level modules during optimization.
+[11/04 05:37:33     47s] *** timeDesign #1 [finish] () : cpu/real = 0:00:01.2/0:00:01.2 (1.0), totSession cpu/real = 0:00:47.2/0:02:17.6 (0.3), mem = 2412.8M
+[11/04 05:37:33     47s] 
+[11/04 05:37:33     47s] =============================================================================================
+[11/04 05:37:33     47s]  Final TAT Report : timeDesign #1                                               22.17-s086_1
+[11/04 05:37:33     47s] =============================================================================================
+[11/04 05:37:33     47s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[11/04 05:37:33     47s] ---------------------------------------------------------------------------------------------
+[11/04 05:37:33     47s] [ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[11/04 05:37:33     47s] [ OptSummaryReport       ]      1   0:00:00.0  (   2.8 % )     0:00:01.1 /  0:00:01.1    1.0
+[11/04 05:37:33     47s] [ UpdateTimingGraph      ]      1   0:00:00.6  (  48.2 % )     0:00:01.0 /  0:00:01.0    1.0
+[11/04 05:37:33     47s] [ FullDelayCalc          ]      1   0:00:00.4  (  29.6 % )     0:00:00.4 /  0:00:00.4    1.0
+[11/04 05:37:33     47s] [ TimingUpdate           ]      1   0:00:00.0  (   0.6 % )     0:00:00.0 /  0:00:00.0    0.0
+[11/04 05:37:33     47s] [ TimingReport           ]      1   0:00:00.0  (   0.9 % )     0:00:00.0 /  0:00:00.0    0.9
+[11/04 05:37:33     47s] [ GenerateReports        ]      1   0:00:00.1  (   5.9 % )     0:00:00.1 /  0:00:00.1    1.1
+[11/04 05:37:33     47s] [ MISC                   ]          0:00:00.1  (  12.1 % )     0:00:00.1 /  0:00:00.2    1.1
+[11/04 05:37:33     47s] ---------------------------------------------------------------------------------------------
+[11/04 05:37:33     47s]  timeDesign #1 TOTAL                0:00:01.2  ( 100.0 % )     0:00:01.2 /  0:00:01.2    1.0
+[11/04 05:37:33     47s] ---------------------------------------------------------------------------------------------
+[11/04 05:37:33     47s] <CMD> saveDesign -def InitDesign
+[11/04 05:37:33     47s] % Begin save design ... (date=11/04 05:37:33, mem=1900.5M)
+[11/04 05:37:33     47s] % Begin Save ccopt configuration ... (date=11/04 05:37:33, mem=1900.5M)
+[11/04 05:37:33     47s] % End Save ccopt configuration ... (date=11/04 05:37:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1901.5M, current mem=1901.5M)
+[11/04 05:37:33     47s] % Begin Save netlist data ... (date=11/04 05:37:33, mem=1901.5M)
+[11/04 05:37:33     47s] Writing Binary DB to InitDesign.dat/uart_top.v.bin in single-threaded mode...
+[11/04 05:37:33     47s] % End Save netlist data ... (date=11/04 05:37:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=1901.6M, current mem=1901.6M)
+[11/04 05:37:33     47s] Saving symbol-table file ...
+[11/04 05:37:33     47s] Saving congestion map file InitDesign.dat/uart_top.route.congmap.gz ...
+[11/04 05:37:34     47s] % Begin Save AAE data ... (date=11/04 05:37:34, mem=1902.1M)
+[11/04 05:37:34     47s] Saving AAE Data ...
+[11/04 05:37:34     47s] % End Save AAE data ... (date=11/04 05:37:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=1960.3M, current mem=1904.5M)
+[11/04 05:37:34     47s] Saving preference file InitDesign.dat/gui.pref.tcl ...
+[11/04 05:37:34     47s] Saving mode setting ...
+[11/04 05:37:34     47s] Saving global file ...
+[11/04 05:37:34     47s] % Begin Save floorplan data ... (date=11/04 05:37:34, mem=1907.4M)
+[11/04 05:37:34     47s] Saving floorplan file ...
+[11/04 05:37:34     47s] % End Save floorplan data ... (date=11/04 05:37:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=1907.4M, current mem=1907.4M)
+[11/04 05:37:34     47s] Saving Drc markers ...
+[11/04 05:37:34     47s] ... No Drc file written since there is no markers found.
+[11/04 05:37:34     47s] % Begin Save placement data ... (date=11/04 05:37:34, mem=1907.5M)
+[11/04 05:37:34     47s] ** Saving stdCellPlacement_binary (version# 2) ...
+[11/04 05:37:34     47s] Save Adaptive View Pruning View Names to Binary file
+[11/04 05:37:34     47s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=2426.4M) ***
+[11/04 05:37:34     47s] % End Save placement data ... (date=11/04 05:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1907.5M, current mem=1907.5M)
+[11/04 05:37:34     47s] % Begin Save routing data ... (date=11/04 05:37:34, mem=1907.5M)
+[11/04 05:37:34     47s] Saving route file ...
+[11/04 05:37:34     47s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=2423.4M) ***
+[11/04 05:37:34     47s] % End Save routing data ... (date=11/04 05:37:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1907.7M, current mem=1907.7M)
+[11/04 05:37:34     47s] Saving Def ...
+[11/04 05:37:34     47s] Writing DEF file 'InitDesign.dat/uart_top.def.gz', current time is Wed Nov  4 05:37:34 2026 ...
+[11/04 05:37:34     47s] unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+[11/04 05:37:34     47s] DEF file 'InitDesign.dat/uart_top.def.gz' is written, current time is Wed Nov  4 05:37:34 2026 ...
+[11/04 05:37:34     47s] Saving property file InitDesign.dat/uart_top.prop
+[11/04 05:37:34     47s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2426.4M) ***
+[11/04 05:37:34     47s] % Begin Save power constraints data ... (date=11/04 05:37:34, mem=1908.5M)
+[11/04 05:37:35     48s] % End Save power constraints data ... (date=11/04 05:37:34, total cpu=0:00:00.1, real=0:00:01.0, peak res=1908.6M, current mem=1908.6M)
+[11/04 05:37:35     48s] Generated self-contained design InitDesign.dat
+[11/04 05:37:35     48s] % End save design ... (date=11/04 05:37:35, total cpu=0:00:01.5, real=0:00:02.0, peak res=1960.3M, current mem=1910.4M)
+[11/04 05:37:35     48s] *** Message Summary: 0 warning(s), 0 error(s)
+[11/04 05:37:35     48s] 
+[11/04 05:37:35     48s] 
+[11/04 05:37:35     48s] *** Memory Usage v#1 (Current mem = 2465.750M, initial mem = 646.371M) ***
+[11/04 05:37:35     48s] 
+[11/04 05:37:35     48s] *** Summary of all messages that are not suppressed in this session:
+[11/04 05:37:35     48s] Severity  ID               Count  Summary                                  
+[11/04 05:37:35     48s] WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+[11/04 05:37:35     48s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[11/04 05:37:35     48s] WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[11/04 05:37:35     48s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[11/04 05:37:35     48s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[11/04 05:37:35     48s] ERROR     IMPSYT-7338          1  The specified design session directory '...
+[11/04 05:37:35     48s] WARNING   IMPDB-2136           2  %s term '%s' of %s instance '%s' does no...
+[11/04 05:37:35     48s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[11/04 05:37:35     48s] WARNING   IMPSP-5123           2  Cell %s is not found.                    
+[11/04 05:37:35     48s] ERROR     IMPSP-5234           1  No valid tie-cell name given in this str...
+[11/04 05:37:35     48s] WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+[11/04 05:37:35     48s] WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+[11/04 05:37:35     48s] WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+[11/04 05:37:35     48s] WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+[11/04 05:37:35     48s] WARNING   IMPCTE-290           8  Could not locate cell %s in any library ...
+[11/04 05:37:35     48s] ERROR     IMPTCM-10            1  Failed to set value for option "%s".     
+[11/04 05:37:35     48s] WARNING   TCLCMD-1014          1  The SDC set_operating_conditions asserti...
+[11/04 05:37:35     48s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[11/04 05:37:36     48s] WARNING   TECHLIB-302         40  No function defined for cell '%s'. The c...
+[11/04 05:37:36     48s] WARNING   TECHLIB-459          2  Appending library '%s' to the previously...
+[11/04 05:37:36     48s] *** Message Summary: 89 warning(s), 3 error(s)
+[11/04 05:37:36     48s] 
+[11/04 05:37:36     48s] --- Ending "Innovus" (totcpu=0:00:48.8, real=0:02:22, mem=2465.8M) ---

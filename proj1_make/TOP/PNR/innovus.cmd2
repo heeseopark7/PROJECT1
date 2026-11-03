@@ -1,0 +1,75 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Nov  4 05:50:08 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+#@(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+#@(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+#@(#)CDS: CPE v22.17-s051
+#@(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+restoreDesign PowerPlan.dat
+setDontUse BUFX2 true
+setPlaceMode -place_global_cong_effort high
+place_design
+checkPlace uart_top.checkPlace
+setRouteMode -earlyGlobalMinRouteLayer 1 -earlyGlobalMaxRouteLayer 11 -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+earlyGlobalRoute
+reportCongestion -hotSpot
+reportCongestion -overflow
+setDrawView place
+setLayerPreference densityMap -isVisible 1
+setLayerPreference densityMap -isVisible 0
+setLayerPreference pinDensityMap -isVisible 1
+setLayerPreference pinDensityMap -isVisible 0
+place_opt_design
+earlyGlobalRoute
+reportCongestion -hotSpot
+reportCongestion -overflow
+timeDesign -preCTS -outDir reports/timing/preCTS
+zoomBox -82.88450 -48.06500 118.82300 132.50650
+zoomBox -45.08650 -25.18300 100.64750 105.28000
+zoomBox -17.77700 -8.65050 87.51600 85.60900
+checkDesign -place
+saveDesign -def PlaceOpt
+set_ccopt_property target_skew 0.01
+create_ccopt_clock_tree_spec
+ccopt_design
+zoomBox -125.16600 -64.09300 154.02100 185.83900
+zoomBox -68.63900 -39.43750 133.07400 141.13850
+zoomBox -27.79800 -21.62450 117.94000 108.84200
+all_constraint_modes -active
+set_interactive_constraint_modes [all_constraint_modes -active]
+set_propagated_clock [all_clocks]
+zoomBox -42.50400 -30.74050 128.95250 122.74950
+zoomBox -27.79850 -21.62450 117.94000 108.84250
+timeDesign -postCTS -outDir reports/timing/postCTS
+report_ccopt_clock_trees -file reports/clock/clock_trees.rpt
+report_ccopt_skew_groups -file reports/clock/skew_groups.rpt
+report_clock_timing -type skew -nworst 5 > reports/clock/skew.rpt
+optDesign -postCTS
+zoomBox -37.80900 -18.81250 107.92950 111.65450
+optDesign -postCTS -hold
+timeDesign -postCTS -outDir reports/timing/postCTS
+timeDesign -postCTS -outDir reports/timing/postCTS -hold
+saveDesign -def PostCTSopt
+zoomBox -27.34500 -7.18950 96.53250 103.70750
+zoomBox -53.13500 -28.05550 118.32200 125.43500
+report_timing -early -max_paths 8 -path_type full_clock
+ecoAddRepeater -net FE_PHN9_i_nRst -cell CLKBUFX4 -name FE_MANUAL_HOLD_nRst
+refinePlace
+timeDesign -postCTS -hold -outDir reports/timing/postCTS
+timeDesign -postCTS -outDir reports/timing/postCTS
+ecoAddRepeater -net FE_RN_1 -cell CLKBUFX4 -name FE_MANUAL_HOLD_nRst2
+refinePlace
+timeDesign -postCTS -hold -outDir reports/timing/postCTS
+timeDesign -postCTS -outDir reports/timing/postCTS

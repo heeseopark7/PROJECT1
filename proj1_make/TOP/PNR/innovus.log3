@@ -1,0 +1,72 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+Options:	
+Date:		Wed Nov  4 06:22:53 2026
+Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[06:22:53.158609] Configured Lic search path (22.01-s003): 5280@localhost
+
+		invs	Innovus Implementation System	22.1	Denied
+		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+		4 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set enc_check_rename_command_name 1
+<CMD> set_ccopt_property target_skew 0.01
+**ERROR: (IMPCCOPT-2065):	The command 'set_ccopt_property' can only be used for keyless properties until a design is loaded. The property 'target_skew' is keyed.
+
+<CMD> create_ccopt_clock_tree_spec
+**ERROR: (IMPCCOPT-2403):	Cannot run 'create_ccopt_clock_tree_spec' as no delay corners are defined.
+
+<CMD> ccopt_design
+#% Begin ccopt_design (date=11/04 06:23:40, mem=1341.2M)
+**ERROR: (IMPOPT-581):	Design not in memory.
+#% End ccopt_design (date=11/04 06:23:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=1341.3M, current mem=1341.3M)
+
+<CMD> all_constraint_modes -active
+<CMD> set_interactive_constraint_modes [all_constraint_modes -active] 
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '*'
+**ERROR: (TCLCMD-917):	Cannot find 'clocks' that match '*'
+<CMD> set_propagated_clock [all_clocks]
+**ERROR: (TCLCMD-1129):	Design must be in memory before running 'set_propagated_clock'.
+
+<CMD> timeDesign -postCTS -outDir reports/timing/postCTS
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yet.
+
+<CMD> report_ccopt_clock_trees -file reports/clock/clock_trees.rpt
+**ERROR: (IMPCCOPT-2004):	Cannot run 'report_ccopt_clock_trees -file reports/clock/clock_trees.rpt' as no clock trees are defined.
+
+<CMD> report_ccopt_skew_groups -file reports/clock/skew_groups.rpt
+**ERROR: (IMPCCOPT-2004):	Cannot run 'report_ccopt_skew_groups -file reports/clock/skew_groups.rpt' as no clock trees are defined.
+
+<CMD> report_clock_timing -type skew -nworst 5 > reports/clock/skew.rpt
+**ERROR: (TCLCMD-119):	No module selected
+
+<CMD> optDesign -postCTS
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1341.8M, totSessionCpu=0:00:28 **
+**ERROR: (IMPOPT-569):	Design data is not loaded.
+Type 'man IMPOPT-569' for more detail.
+1
+<CMD> optDesign -postCTS -hold
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1341.8M, totSessionCpu=0:00:28 **
+**ERROR: (IMPOPT-569):	Design data is not loaded.
+Type 'man IMPOPT-569' for more detail.
+1
+<CMD> timeDesign -postCTS -outDir reports/timing/postCTS
+**ERROR: (IMPOPT-6029):	Timing Library is not loaded yet.
+
+
+*** Memory Usage v#1 (Current mem = 1600.781M, initial mem = 646.371M) ***
+*** Message Summary: 1 warning(s), 12 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:32.5, real=0:01:18, mem=1600.8M) ---

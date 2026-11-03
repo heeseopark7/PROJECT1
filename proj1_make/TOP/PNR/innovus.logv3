@@ -1,0 +1,99 @@
+[11/04 06:22:53      0s] 
+[11/04 06:22:53      0s] Cadence Innovus(TM) Implementation System.
+[11/04 06:22:53      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/04 06:22:53      0s] 
+[11/04 06:22:53      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[11/04 06:22:53      0s] Options:	
+[11/04 06:22:53      0s] Date:		Wed Nov  4 06:22:53 2026
+[11/04 06:22:53      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[11/04 06:22:53      0s] OS:		CentOS Linux 7 (Core)
+[11/04 06:22:53      0s] 
+[11/04 06:22:53      0s] License:
+[11/04 06:22:53      0s] 		[06:22:53.158609] Configured Lic search path (22.01-s003): 5280@localhost
+
+[11/04 06:22:53      0s] 		invs	Innovus Implementation System	22.1	Denied
+[11/04 06:22:53      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[11/04 06:22:53      0s] 		4 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/04 06:23:12     19s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[11/04 06:23:15     21s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[11/04 06:23:15     21s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[11/04 06:23:15     21s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[11/04 06:23:15     21s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[11/04 06:23:15     21s] @(#)CDS: CPE v22.17-s051
+[11/04 06:23:15     21s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[11/04 06:23:15     21s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[11/04 06:23:15     21s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[11/04 06:23:15     21s] @(#)CDS: RCDB 11.15.0
+[11/04 06:23:15     21s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[11/04 06:23:15     21s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[11/04 06:23:15     21s] Create and set the environment variable TMPDIR to /home/hah013/PROJ1/proj1_make/TOP/PNR/innovus_temp_67044_0e1498c5-0b3d-48fb-9796-50fd4150d505_kopo-seongnam_hah013_mqYJl1.
+
+[11/04 06:23:15     21s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[11/04 06:23:17     23s] 
+[11/04 06:23:17     23s] **INFO:  MMMC transition support version v31-84 
+[11/04 06:23:17     23s] 
+[11/04 06:23:17     23s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/04 06:23:17     23s] <CMD> suppressMessage ENCEXT-2799
+[11/04 06:23:17     23s] <CMD> win
+[11/04 06:23:18     23s] <CMD> set enc_check_rename_command_name 1
+[11/04 06:23:40     27s] <CMD> set_ccopt_property target_skew 0.01
+[11/04 06:23:40     27s] **ERROR: (IMPCCOPT-2065):	The command 'set_ccopt_property' can only be used for keyless properties until a design is loaded. The property 'target_skew' is keyed.
+
+[11/04 06:23:40     27s] <CMD> create_ccopt_clock_tree_spec
+[11/04 06:23:40     27s] **ERROR: (IMPCCOPT-2403):	Cannot run 'create_ccopt_clock_tree_spec' as no delay corners are defined.
+
+[11/04 06:23:40     27s] <CMD> ccopt_design
+[11/04 06:23:40     27s] #% Begin ccopt_design (date=11/04 06:23:40, mem=1341.2M)
+[11/04 06:23:40     27s] **ERROR: (IMPOPT-581):	Design not in memory.
+#% End ccopt_design (date=11/04 06:23:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=1341.3M, current mem=1341.3M)
+[11/04 06:23:40     27s] 
+[11/04 06:23:40     27s] <CMD> all_constraint_modes -active
+[11/04 06:23:40     27s] <CMD> set_interactive_constraint_modes [all_constraint_modes -active] 
+[11/04 06:23:40     27s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '*'
+[11/04 06:23:40     27s] **ERROR: (TCLCMD-917):	Cannot find 'clocks' that match '*'
+<CMD> set_propagated_clock [all_clocks]
+[11/04 06:23:40     27s] **ERROR: (TCLCMD-1129):	Design must be in memory before running 'set_propagated_clock'.
+
+[11/04 06:23:40     27s] <CMD> timeDesign -postCTS -outDir reports/timing/postCTS
+[11/04 06:23:40     27s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet.
+
+[11/04 06:23:40     27s] <CMD> report_ccopt_clock_trees -file reports/clock/clock_trees.rpt
+[11/04 06:23:40     27s] **ERROR: (IMPCCOPT-2004):	Cannot run 'report_ccopt_clock_trees -file reports/clock/clock_trees.rpt' as no clock trees are defined.
+
+[11/04 06:23:40     27s] <CMD> report_ccopt_skew_groups -file reports/clock/skew_groups.rpt
+[11/04 06:23:40     27s] **ERROR: (IMPCCOPT-2004):	Cannot run 'report_ccopt_skew_groups -file reports/clock/skew_groups.rpt' as no clock trees are defined.
+
+[11/04 06:23:40     27s] <CMD> report_clock_timing -type skew -nworst 5 > reports/clock/skew.rpt
+[11/04 06:23:40     27s] **ERROR: (TCLCMD-119):	No module selected
+
+[11/04 06:23:40     27s] <CMD> optDesign -postCTS
+[11/04 06:23:40     27s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1341.8M, totSessionCpu=0:00:28 **
+[11/04 06:23:40     27s] **ERROR: (IMPOPT-569):	Design data is not loaded.
+Type 'man IMPOPT-569' for more detail.
+[11/04 06:23:40     27s] 1
+[11/04 06:23:40     27s] <CMD> optDesign -postCTS -hold
+[11/04 06:23:40     27s] **optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1341.8M, totSessionCpu=0:00:28 **
+[11/04 06:23:40     27s] **ERROR: (IMPOPT-569):	Design data is not loaded.
+Type 'man IMPOPT-569' for more detail.
+[11/04 06:23:40     27s] 1
+[11/04 06:23:40     27s] <CMD> timeDesign -postCTS -outDir reports/timing/postCTS
+[11/04 06:23:40     27s] **ERROR: (IMPOPT-6029):	Timing Library is not loaded yet.
+
+[11/04 06:24:11     32s] 
+[11/04 06:24:11     32s] *** Memory Usage v#1 (Current mem = 1600.781M, initial mem = 646.371M) ***
+[11/04 06:24:11     32s] 
+[11/04 06:24:11     32s] *** Summary of all messages that are not suppressed in this session:
+[11/04 06:24:11     32s] Severity  ID               Count  Summary                                  
+[11/04 06:24:11     32s] ERROR     IMPOPT-569           2  Design data is not loaded.               
+[11/04 06:24:11     32s] ERROR     IMPOPT-581           1  Design not in memory.                    
+[11/04 06:24:11     32s] ERROR     IMPOPT-6029          2  Timing Library is not loaded yet.        
+[11/04 06:24:11     32s] ERROR     IMPCCOPT-2065        1  The command '%s' can only be used for ke...
+[11/04 06:24:11     32s] ERROR     IMPCCOPT-2403        1  Cannot run %s as no delay corners are de...
+[11/04 06:24:11     32s] ERROR     IMPCCOPT-2004        2  Cannot run %s as no clock trees are defi...
+[11/04 06:24:11     32s] ERROR     TCLCMD-119           1  No module selected                       
+[11/04 06:24:11     32s] WARNING   TCLCMD-513           1  The software could not find a matching o...
+[11/04 06:24:11     32s] ERROR     TCLCMD-917           1  Cannot find '%s' that match '%s'         
+[11/04 06:24:11     32s] ERROR     TCLCMD-1129          1  Design must be in memory before running ...
+[11/04 06:24:11     32s] *** Message Summary: 1 warning(s), 12 error(s)
+[11/04 06:24:11     32s] 
+[11/04 06:24:11     32s] --- Ending "Innovus" (totcpu=0:00:32.5, real=0:01:18, mem=1600.8M) ---

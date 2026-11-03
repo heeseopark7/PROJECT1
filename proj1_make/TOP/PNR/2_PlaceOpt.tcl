@@ -2,7 +2,7 @@
 ## Placement & Optimization
 ######################################3
 restoreDesign PowerPlan.dat
-
+setDontUse BUFX2 true
 file mkdir reports/timing
 set_db place_global_cong_effort high
 
