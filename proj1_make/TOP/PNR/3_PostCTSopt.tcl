@@ -3,6 +3,8 @@
 ########################################
 
 restoreDesign PlaceOpt.dat
+
+file mkdir reports/timing/postCTS reports/clock
 # Target about skew
 set_ccopt_property target_skew 0.01  
 
