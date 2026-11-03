@@ -101,16 +101,16 @@ set_operating_conditions  -max_library [get_libs slow_vdd1v0_basicCells.lib:slow
 #                                 #
 ###################################
 
-set_dont_touch pad1 
-set_dont_touch pad2 
-set_dont_touch pad3 
-set_dont_touch pad4 
-set_dont_touch pad5 
+#set_dont_touch pad1 
+#set_dont_touch pad2 
+#set_dont_touch pad3 
+#set_dont_touch pad4 
+#set_dont_touch pad5 
 
 # Below is no use in Genus tool
 #set_isolate_ports [all_outputs]
 
-set_ideal_network [get_ports "i_clk i_nRst"]
+#set_ideal_network [get_ports "i_clk i_nRst"]
 #set_ideal_network [get_pins u_cmsdk_mcu_clkctrl/hrst_reg_reg/Q]
 #set_ideal_network [get_pins u_cmsdk_mcu_clkctrl/prst_reg_reg/Q]
 

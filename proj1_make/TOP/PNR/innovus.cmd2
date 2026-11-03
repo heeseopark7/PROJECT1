@@ -1,0 +1,62 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Oct 31 04:06:01 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+#@(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+#@(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+#@(#)CDS: CPE v22.17-s051
+#@(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+set init_gnd_net VSS
+set init_lef_file {../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/lef/gsclib045_tech.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ../../../../SoC/GPDK045/digital/giolib045_v3.5/lef/giolib045_modify.lef}
+set init_verilog ../SYN/mapped/uart_top_syn_final.v
+set init_mmmc_file uart_top.mmmc.view
+set init_top_cell uart_top
+set init_pwr_net VDD
+init_design
+checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -spef -floorplan -place -outdir checkDesign
+floorPlan -site CoreSite -d 840.0 840.0 406.32 406.32 406.32 406.32
+loadIoFile init.io
+zoomBox -537.87200 -332.33050 1237.14150 1256.68550
+zoomBox -737.64700 -464.02800 1350.60400 1405.40250
+zoomBox 3.24550 24.38950 929.81400 853.86600
+placeInstance pad1 0.0 240.0 R270 -fixed
+placeInstance pad2 0.0 300.0 R270 -fixed
+placeInstance pad6 0.0 360.0 R270 -fixed
+placeInstance pad7 0.0 420.0 R270 -fixed
+placeInstance pad8 0.0 480.0 R270 -fixed
+placeInstance pad9 0.0 540.0 R270 -fixed
+placeInstance pad5 240.0 600.0 R180 -fixed
+placeInstance pad18 300.0 600.0 R180 -fixed
+placeInstance pad19 360.0 600.0 R180 -fixed
+placeInstance pad20 420.0 600.0 R180 -fixed
+placeInstance pad21 480.0 600.0 R180 -fixed
+placeInstance pad4 600.0 240.0 R90 -fixed
+placeInstance pad14 600.0 300.0 R90 -fixed
+placeInstance pad15 600.0 360.0 R90 -fixed
+placeInstance pad16 600.0 420.0 R90 -fixed
+placeInstance pad17 600.0 480.0 R90 -fixed
+placeInstance pad3 240.0 0.0 R0 -fixed
+placeInstance pad10 300.0 0.0 R0 -fixed
+placeInstance pad11 360.0 0.0 R0 -fixed
+placeInstance pad12 420.0 0.0 R0 -fixed
+placeInstance pad13 480.0 0.0 R0 -fixed
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side n
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side s
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side w
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side e
+report_analysis_views
+timeDesign -prePlace
+saveDesign -def InitDesign
+selectInst CORNER_BL
+zoomBox -112.67300 -39.06950 977.40800 936.78550

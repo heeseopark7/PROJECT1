@@ -1,0 +1,108 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Oct 31 03:53:09 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+#@(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+#@(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+#@(#)CDS: CPE v22.17-s051
+#@(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set enc_check_rename_command_name 1
+set init_gnd_net VSS
+set init_lef_file {../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/lef/gsclib045_tech.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ../../../../SoC/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ../../../../SoC/GPDK045/digital/giolib045_v3.5/lef/giolib045_modify.lef}
+set init_verilog ../SYN/mapped/uart_top_syn_final.v
+set init_mmmc_file uart_top.mmmc.view
+set init_top_cell uart_top
+set init_pwr_net VDD
+init_design
+zoomBox -403.26800 -184.09800 1105.49300 1166.56500
+zoomBox -100.78850 -44.10850 989.29100 931.74550
+checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -spef -floorplan -place -outdir checkDesign
+zoomBox -235.91800 -145.14450 1046.52850 1002.91900
+zoomBox 265.22800 229.56050 834.25700 738.96300
+zoomBox 111.70250 114.77000 899.28600 819.82550
+zoomBox 14.07100 41.77150 940.64000 871.24850
+fit
+zoomBox 11.49550 59.08050 938.06350 888.55650
+selectMarker 643.0050 642.1400 653.0050 652.1400 -1 0 0
+deselectAll
+selectMarker 643.0050 642.1400 653.0050 652.1400 -1 0 0
+zoomBox 107.14900 147.54200 894.73150 852.59650
+zoomBox 188.45400 222.73400 857.89950 822.03050
+zoomBox 188.45400 222.73400 857.89950 822.03050
+fit
+fit
+checkFPlan -outFile result.txt
+zoomBox -601.66800 -341.19100 1173.34500 1247.82450
+zoomBox -241.64250 -127.72450 1040.80450 1020.33950
+fit
+zoomBox -639.76950 -318.15300 1135.24350 1270.86250
+zoomBox -252.34350 -121.25450 1030.10350 1026.80950
+zoomBox -1305.12950 -496.49000 1151.63700 1702.84050
+zoomBox -693.93350 -278.64700 1081.08050 1310.36950
+floorPlan -site CoreSite -d 840.0 840.0 406.32 406.32 406.32 406.32
+zoomBox -20.00650 190.02900 906.56200 1019.50550
+zoomBox -149.88600 99.70600 940.19500 1075.56100
+zoomBox -302.68500 -5.31250 979.76350 1142.75250
+zoomBox -803.05600 -441.05250 1285.19800 1428.38050
+zoomBox -271.41350 -111.64250 1011.03650 1036.42400
+loadIoFile init.io
+zoomBox -103.18600 -43.70400 986.89650 932.15250
+zoomBox -702.17250 -285.60250 1072.84500 1303.41700
+zoomBox -469.33050 -191.57000 1039.43400 1159.09650
+zoomBox -271.41500 -111.64250 1011.03500 1036.42400
+zoomBox 39.80700 14.04350 966.37700 843.52150
+zoomBox -103.18700 -43.70400 986.89550 932.15250
+placeInstance pad1 0.0 240.0 R270 -fixed
+placeInstance pad2 0.0 300.0 R270 -fixed
+placeInstance pad6 0.0 360.0 R270 -fixed
+placeInstance pad7 0.0 420.0 R270 -fixed
+placeInstance pad8 0.0 480.0 R270 -fixed
+placeInstance pad9 0.0 540.0 R270 -fixed
+zoomBox 198.82100 104.85100 868.26850 704.14950
+zoomBox -103.18800 -43.70450 986.89550 932.15300
+placeInstance pad5 240.0 600.0 R180 -fixed
+placeInstance pad18 300.0 600.0 R180 -fixed
+placeInstance pad19 360.0 600.0 R180 -fixed
+placeInstance pad20 420.0 600.0 R180 -fixed
+placeInstance pad21 480.0 600.0 R180 -fixed
+zoomBox 172.69950 94.82650 960.28500 799.88350
+zoomBox -485.04100 -235.44350 1023.72650 1115.22550
+placeInstance pad4 600.0 240.0 R90 -fixed
+placeInstance pad14 600.0 300.0 R90 -fixed
+placeInstance pad15 600.0 360.0 R90 -fixed
+placeInstance pad16 600.0 420.0 R90 -fixed
+placeInstance pad17 600.0 480.0 R90 -fixed
+zoomBox 81.47450 153.58000 650.50650 662.98500
+zoomBox -348.61050 -141.75750 933.84550 1006.31450
+placeInstance pad3 240.0 0.0 R0 -fixed
+placeInstance pad10 300.0 0.0 R0 -fixed
+placeInstance pad11 360.0 0.0 R0 -fixed
+placeInstance pad12 420.0 0.0 R0 -fixed
+placeInstance pad13 480.0 0.0 R0 -fixed
+zoomBox -1333.04000 -492.68850 1123.74350 1706.65700
+zoomBox -1024.11450 -382.56250 1064.15150 1486.88150
+zoomBox -761.52800 -288.95500 1013.49800 1300.07200
+zoomBox -538.32950 -209.38900 970.44250 1141.28400
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side n
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side s
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side w
+addIoFiller -cell padIORINGFEED60 padIORINGFEED10 padIORINGFEED5 padIORINGFEED3 padIORINGFEED1 -prefix FILLER -side e
+zoomBox -1276.62600 -530.70700 1180.15750 1668.63850
+zoomBox -538.33000 -209.38950 970.44250 1141.28400
+zoomBox -212.26600 -67.48150 877.82300 908.38100
+report_analysis_views
+timeDesign -prePlace
+saveDesign -def InitDesign
+zoomBox -455.46100 -206.68250 1053.31300 1143.99250
+zoomBox -212.26700 -67.48200 877.82300 908.38100
+zoomBox -610.11700 -295.20500 1164.91250 1293.82550
