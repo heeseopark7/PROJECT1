@@ -1,1 +1,0 @@
-/home/hah013/PROJ1/proj1_make/TOP/SYN/mapped/uart_top_syn_final.sdc
