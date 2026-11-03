@@ -20,42 +20,42 @@ wire    [7:0]   w_tx_data   ;
 wire    [7:0]   w_rx_data   ;
 wire            w_rx_done   ;
 
-//  baud_generator
+//  baud generator
 baud_gen dut1   (
-    .i_clk      (w_clk      ),
-    .i_nRst     (w_nRst     ),
+    .i_clk      (i_clk      ),
+    .i_nRst     (i_nRst     ),
     .o_tick_16x (w_tick_16x )
 );
 
 //  tx
 uart_tx dut2    (
-    .i_clk      (w_clk      ),
-    .i_nRst     (w_nRst     ),
+    .i_clk      (i_clk      ),
+    .i_nRst     (i_nRst     ),
     .i_tick_16x (w_tick_16x ),
     .i_tx_start (w_tx_start ),
     .i_tx_data  (w_tx_data  ),
-    .o_tx_busy  (           ), //  미사용: 송신 요청이 rx_done에만 연동되는 echo 구조라 busy 확인 불필요
-    .o_tx       (w_tx       ) 
+    .o_tx_busy  (           ), // unused: tx request is tied only to rx_done (echo structure), so busy check is not needed
+    .o_tx       (o_tx       )
 );
 
 //  rx
 uart_rx dut3    (
-    .i_clk      (w_clk      ),
-    .i_nRst     (w_nRst     ),
+    .i_clk      (i_clk      ),
+    .i_nRst     (i_nRst     ),
     .i_tick_16x (w_tick_16x ),
-    .i_rx       (w_rx       ),
+    .i_rx       (i_rx       ),
     .o_rx_done  (w_rx_done  ),
-    .o_frame_err(           ), //  미사용: 프레임 에러 처리 기능 없음 (스펙 외)
-    .o_rx_data  (w_rx_data  ) 
+    .o_frame_err(           ), // unused: no frame error handling (out of spec)
+    .o_rx_data  (w_rx_data  )
 );
 
 //  command decoder
 cmd_decoder dut4(
-    .i_clk      (w_clk      ),
-    .i_nRst     (w_nRst     ),
+    .i_clk      (i_clk      ),
+    .i_nRst     (i_nRst     ),
     .i_rx_done  (w_rx_done  ),
     .i_rx_data  (w_rx_data  ),
-    .o_led_ctrl (w_led_ctrl ),
+    .o_led_ctrl (o_led_ctrl ),
     .o_tx_start (w_tx_start ),
     .o_tx_data  (w_tx_data  )
 );
